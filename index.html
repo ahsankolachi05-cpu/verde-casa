@@ -1,0 +1,1875 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Verde Casa — reliable home services for homeowners and property owners across Murcia, Spain. Home cleaning, property maintenance, handyman services and holiday home care, with support in English, Spanish, Dutch and German." />
+    <meta name="keywords" content="home services Murcia, house cleaning Murcia, property maintenance Spain, handyman Murcia, holiday home care" />
+    <meta property="og:title" content="Verde Casa — Your Home. In Good Hands. | Home Services in Murcia" />
+    <meta property="og:description" content="Reliable home services for homeowners and property owners across Murcia. Professional care, tailored to your needs." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/img-0.jpg" />
+    <link rel="icon" href="data:," />
+    <title>Verde Casa — Home Services in Murcia | Your Home. In Good Hands.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root{
+        color-scheme: light;
+        --bg:#FAF7F0;
+        --bg-2:#F2ECDF;
+        --bg-3:#EDE6D6;
+        --surface:#FFFFFF;
+        --surface-soft:#FDFBF7;
+        --ink:#22271F;
+        --ink-soft:#4A5147;
+        --ink-mute:#767E72;
+        --forest:#1E3D2C;
+        --forest-2:#2A5340;
+        --forest-deep:#152B20;
+        --lime:#B9D94C;
+        --lime-soft:#E7F0C4;
+        --lime-ink:#5C7216;
+        --line:rgba(30,51,38,.14);
+        --line-soft:rgba(30,51,38,.08);
+        --shadow-sm:0 2px 10px rgba(28,45,34,.06),0 1px 3px rgba(28,45,34,.05);
+        --shadow-md:0 14px 34px -12px rgba(28,45,34,.18),0 4px 12px rgba(28,45,34,.06);
+        --shadow-lg:0 34px 70px -24px rgba(28,45,34,.30),0 10px 24px rgba(28,45,34,.08);
+        --error:#B3402E;
+        --error-bg:#FBEEEA;
+        --radius:22px;
+        --radius-lg:30px;
+        --header-h:76px;
+        --font-serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+        --font-sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+        --ease:cubic-bezier(.22,.9,.28,1);
+      }
+      @media (prefers-color-scheme: dark){
+        :root{
+          color-scheme: dark;
+          --bg:#10160F;
+          --bg-2:#141B12;
+          --bg-3:#1A2317;
+          --surface:#18211A;
+          --surface-soft:#151D16;
+          --ink:#F1EFE6;
+          --ink-soft:#C9CFC0;
+          --ink-mute:#98A08E;
+          --forest:#2E5C44;
+          --forest-2:#38704F;
+          --forest-deep:#0C120D;
+          --lime:#C4E45E;
+          --lime-soft:#2B3A1E;
+          --lime-ink:#C4E45E;
+          --line:rgba(233,240,220,.16);
+          --line-soft:rgba(233,240,220,.09);
+          --shadow-sm:0 2px 10px rgba(0,0,0,.3);
+          --shadow-md:0 14px 34px -12px rgba(0,0,0,.5);
+          --shadow-lg:0 34px 70px -24px rgba(0,0,0,.6);
+          --error:#E88A76;
+          --error-bg:#33201B;
+        }
+      }
+      *{box-sizing:border-box;}
+      html{scroll-behavior:smooth;}
+      html,body{overflow-x:hidden;}
+      body{
+        margin:0;
+        background:var(--bg);
+        color:var(--ink);
+        font-family:var(--font-sans);
+        font-size:16.5px;
+        line-height:1.65;
+        -webkit-font-smoothing:antialiased;
+        text-rendering:optimizeLegibility;
+      }
+      ::selection{background:var(--lime);color:var(--forest-deep);}
+      img{max-width:100%;display:block;}
+      a{color:inherit;}
+      button{font-family:inherit;}
+      :focus-visible{outline:2.5px solid var(--lime-ink);outline-offset:3px;border-radius:6px;}
+      section{scroll-margin-top:calc(var(--header-h) + 18px);}
+      .wrap{width:min(1240px,100% - 3rem);margin-inline:auto;}
+      @media (max-width:560px){.wrap{width:calc(100% - 2.5rem);}}
+
+      /* ---------- Typography helpers ---------- */
+      .eyebrow{
+        display:inline-flex;align-items:center;gap:.6rem;
+        font-size:.74rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;
+        color:var(--lime-ink);
+      }
+      .eyebrow::before{content:"";width:26px;height:2px;background:var(--lime);border-radius:2px;}
+      .eyebrow.center::after{content:"";width:26px;height:2px;background:var(--lime);border-radius:2px;}
+      h1,h2,h3{font-family:var(--font-serif);font-weight:600;line-height:1.04;margin:0;color:var(--ink);letter-spacing:-.01em;}
+      .h-display{font-size:clamp(3rem,7.2vw,5.6rem);line-height:.98;}
+      .h-section{font-size:clamp(2.3rem,4.6vw,3.6rem);}
+      .h-section em,.h-display em{font-style:italic;color:var(--forest-2);}
+      @media (prefers-color-scheme: dark){.h-section em,.h-display em{color:var(--lime);}}
+      .lede{font-size:clamp(1.05rem,1.6vw,1.22rem);color:var(--ink-soft);line-height:1.7;}
+
+      /* ---------- Buttons ---------- */
+      .btn{
+        position:relative;display:inline-flex;align-items:center;gap:.6rem;
+        padding:1rem 1.7rem;border-radius:999px;border:1px solid transparent;
+        font-weight:700;font-size:.98rem;text-decoration:none;cursor:pointer;
+        transition:background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease),box-shadow .3s var(--ease),transform .15s var(--ease);
+        will-change:transform;white-space:nowrap;
+      }
+      .btn:active{transform:scale(.97);}
+      .btn .arr{transition:transform .35s var(--ease);}
+      .btn:hover .arr{transform:translateX(4px);}
+      .btn-primary{background:var(--forest);color:#F6F3E9;box-shadow:0 14px 28px -12px rgba(30,61,44,.5);}
+      .btn-primary:hover{background:var(--forest-2);}
+      .btn-lime{background:var(--lime);color:var(--forest-deep);box-shadow:0 14px 28px -12px rgba(140,170,40,.55);}
+      .btn-lime:hover{background:#C8E468;}
+      .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line);}
+      .btn-ghost:hover{border-color:var(--forest);color:var(--forest-2);background:var(--surface);}
+      @media (prefers-color-scheme: dark){.btn-ghost:hover{color:var(--lime);border-color:var(--lime);}}
+
+      /* ---------- Announcement bar ---------- */
+      .announce{
+        position:relative;z-index:60;
+        background:var(--forest-deep);color:#EFECE0;
+        font-size:.86rem;font-weight:600;
+      }
+      .announce-inner{display:flex;align-items:center;justify-content:center;gap:.65rem;padding:.55rem 3rem .55rem 1rem;text-align:center;}
+      .pulse-dot{position:relative;width:8px;height:8px;border-radius:50%;background:var(--lime);flex:none;}
+      .pulse-dot::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1.5px solid var(--lime);opacity:.7;animation:pulseRing 2.4s ease-out infinite;}
+      @keyframes pulseRing{0%{transform:scale(.5);opacity:.8}70%{transform:scale(1.25);opacity:0}100%{opacity:0}}
+      .announce-close{
+        position:absolute;right:.7rem;top:50%;transform:translateY(-50%);
+        background:none;border:none;color:#CFCDBF;cursor:pointer;padding:.35rem;border-radius:50%;
+        display:grid;place-items:center;transition:color .25s,background .25s;
+      }
+      .announce-close:hover{color:#fff;background:rgba(255,255,255,.12);}
+
+      /* ---------- Header ---------- */
+      .site-header{
+        position:sticky;top:0;z-index:55;height:var(--header-h);
+        display:flex;align-items:center;
+        background:transparent;
+        transition:background .45s var(--ease),box-shadow .45s var(--ease),backdrop-filter .45s;
+      }
+      .site-header.scrolled{
+        background:color-mix(in srgb,var(--bg) 88%,transparent);
+        backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+        box-shadow:0 10px 30px -14px rgba(28,45,34,.22);
+      }
+      .header-inner{display:flex;align-items:center;gap:2rem;width:min(1320px,100% - 3rem);margin-inline:auto;}
+      @media (max-width:560px){.header-inner{width:calc(100% - 2.5rem);}}
+      .wordmark{
+        font-family:var(--font-serif);font-size:1.72rem;font-weight:700;letter-spacing:-.01em;
+        text-decoration:none;color:var(--ink);display:inline-flex;align-items:baseline;gap:.1rem;flex:none;line-height:1;
+      }
+      .wordmark .dot{color:var(--lime-ink);font-size:2rem;line-height:0;}
+      .wordmark small{
+        font-family:var(--font-sans);font-size:.58rem;font-weight:800;letter-spacing:.3em;text-transform:uppercase;
+        color:var(--ink-mute);margin-left:.55rem;transform:translateY(-2px);
+      }
+      .main-nav{display:flex;gap:2rem;margin-inline:auto;}
+      .main-nav a{
+        text-decoration:none;font-weight:600;font-size:.95rem;color:var(--ink-soft);
+        position:relative;padding:.35rem 0;
+      }
+      .main-nav a::after{
+        content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;
+        background:var(--lime);border-radius:2px;transform:scaleX(0);transform-origin:right;
+        transition:transform .4s var(--ease);
+      }
+      .main-nav a:hover{color:var(--ink);}
+      .main-nav a:hover::after{transform:scaleX(1);transform-origin:left;}
+      .header-actions{display:flex;align-items:center;gap:.9rem;flex:none;}
+      .header-cta{padding:.72rem 1.35rem;font-size:.9rem;}
+      @media (max-width:1080px){.main-nav{display:none;}}
+      @media (max-width:640px){
+        .header-cta{display:none;}
+        .header-inner{gap:.9rem;}
+        .header-actions{gap:.6rem;}
+        .wordmark{font-size:1.38rem;}
+        .wordmark small{display:none;}
+        .lang-btn{padding:.45rem .65rem;font-size:.8rem;}
+        .burger{width:42px;height:42px;}
+        .burger span{left:11px;}
+        .burger span:nth-child(1){top:15px;}
+        .burger span:nth-child(2){top:20px;}
+        .burger span:nth-child(3){top:25px;}
+        .burger.open span:nth-child(1),.burger.open span:nth-child(3){top:20px;}
+      }
+
+      /* ---------- Language selector ---------- */
+      .lang-select{position:relative;}
+      .lang-btn{
+        display:inline-flex;align-items:center;gap:.45rem;background:transparent;
+        border:1px solid var(--line);border-radius:999px;padding:.5rem .85rem;
+        font-weight:700;font-size:.86rem;color:var(--ink);cursor:pointer;
+        transition:border-color .25s,background .25s;
+      }
+      .lang-btn:hover{border-color:var(--forest);}
+      .lang-btn .chev{transition:transform .3s var(--ease);}
+      .lang-select.open .lang-btn .chev{transform:rotate(180deg);}
+      .lang-menu{
+        position:absolute;right:0;top:calc(100% + 10px);min-width:196px;
+        background:var(--surface);border:1px solid var(--line-soft);border-radius:16px;
+        box-shadow:var(--shadow-md);padding:.45rem;z-index:80;
+        opacity:0;visibility:hidden;transform:translateY(-6px) scale(.98);
+        transition:opacity .25s var(--ease),transform .25s var(--ease),visibility .25s;
+      }
+      .lang-select.open .lang-menu{opacity:1;visibility:visible;transform:translateY(0) scale(1);}
+      .lang-menu button{
+        display:flex;align-items:center;gap:.7rem;width:100%;text-align:left;
+        background:none;border:none;padding:.62rem .7rem;border-radius:10px;cursor:pointer;
+        font-size:.93rem;font-weight:600;color:var(--ink-soft);
+      }
+      .lang-menu button:hover{background:var(--bg-2);color:var(--ink);}
+      .lang-menu button[aria-checked="true"]{color:var(--forest-2);}
+      @media (prefers-color-scheme: dark){.lang-menu button[aria-checked="true"]{color:var(--lime);}}
+      .lang-menu .code{
+        font-size:.7rem;font-weight:800;letter-spacing:.08em;background:var(--bg-2);
+        border:1px solid var(--line-soft);border-radius:6px;padding:.14rem .4rem;color:var(--ink-soft);flex:none;
+      }
+      .lang-menu .check{margin-left:auto;opacity:0;color:var(--lime-ink);}
+      .lang-menu button[aria-checked="true"] .check{opacity:1;}
+
+      /* ---------- Hamburger / mobile menu ---------- */
+      .burger{
+        display:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);
+        background:var(--surface);cursor:pointer;place-items:center;flex:none;position:relative;z-index:75;
+      }
+      .burger span{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;position:absolute;left:13px;transition:transform .4s var(--ease),opacity .3s,top .4s var(--ease);}
+      .burger span:nth-child(1){top:17px;}
+      .burger span:nth-child(2){top:23px;}
+      .burger span:nth-child(3){top:29px;}
+      .burger.open span:nth-child(1){top:23px;transform:rotate(45deg);}
+      .burger.open span:nth-child(2){opacity:0;}
+      .burger.open span:nth-child(3){top:23px;transform:rotate(-45deg);}
+      @media (max-width:1080px){.burger{display:grid;}}
+      .mobile-menu{
+        position:fixed;inset:0;z-index:70;background:var(--forest-deep);color:#F0EEE2;
+        padding:calc(var(--header-h) + 2rem) 1.6rem 2.2rem;display:flex;flex-direction:column;
+        clip-path:circle(0% at calc(100% - 44px) 38px);
+        transition:clip-path .65s var(--ease);visibility:hidden;
+      }
+      .mobile-menu.open{clip-path:circle(150% at calc(100% - 44px) 38px);visibility:visible;}
+      .mobile-menu nav{display:flex;flex-direction:column;gap:.4rem;}
+      .mobile-menu nav a{
+        font-family:var(--font-serif);font-size:clamp(2rem,8vw,2.7rem);font-weight:600;
+        color:#F0EEE2;text-decoration:none;padding:.35rem 0;display:flex;align-items:baseline;gap:1rem;
+        opacity:0;transform:translateY(18px);transition:opacity .5s var(--ease),transform .5s var(--ease);
+      }
+      .mobile-menu nav a small{font-family:var(--font-sans);font-size:.72rem;font-weight:800;letter-spacing:.2em;color:var(--lime);}
+      .mobile-menu.open nav a{opacity:1;transform:none;}
+      .mobile-menu.open nav a:nth-child(1){transition-delay:.12s}.mobile-menu.open nav a:nth-child(2){transition-delay:.19s}
+      .mobile-menu.open nav a:nth-child(3){transition-delay:.26s}.mobile-menu.open nav a:nth-child(4){transition-delay:.33s}
+      .mobile-menu.open nav a:nth-child(5){transition-delay:.40s}
+      .mobile-menu .mm-foot{margin-top:auto;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;}
+      .mobile-menu .lang-btn{border-color:rgba(255,255,255,.3);color:#F0EEE2;}
+      .mobile-menu .lang-menu{left:0;right:auto;background:#1D2B21;color:#F0EEE2;border-color:rgba(255,255,255,.12);}
+      .mobile-menu .lang-menu button{color:#D8DAD0;}
+      .mobile-menu .lang-menu button:hover{background:rgba(255,255,255,.08);color:#fff;}
+      body.menu-open{overflow:hidden;}
+      body.menu-open .site-header{z-index:90;background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;}
+      body.menu-open .wordmark{color:#F4F2E8;}
+      body.menu-open .wordmark small{color:#A9AE9D;}
+      body.menu-open .header-actions .lang-select{display:none;}
+      body.menu-open .burger{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3);}
+      body.menu-open .burger span{background:#F4F2E8;}
+
+      /* ---------- Reveal animations ---------- */
+      .rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease);}
+      .rv.in{opacity:1;transform:none;}
+      .rv-card{transform:translateY(26px);}
+      .rv-card.in{transform:none;}
+      .rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}.rv-d4{transition-delay:.32s}
+      .rv-img{position:relative;}
+      .rv-img::after{
+        content:"";position:absolute;inset:0;z-index:4;border-radius:inherit;pointer-events:none;
+        background:var(--mask,var(--bg));transform-origin:bottom;
+        transition:transform 1.15s var(--ease);
+      }
+      .rv-img.in::after{transform:scaleY(0);}
+      .coverage-visual{--mask:var(--bg-2);}
+
+      /* ---------- Hero ---------- */
+      .hero{position:relative;padding:clamp(2.2rem,5vw,4.5rem) 0 clamp(4rem,7vw,6.5rem);overflow:hidden;}
+      .hero::before{
+        content:"";position:absolute;top:-260px;right:-180px;width:640px;height:640px;border-radius:50%;
+        background:radial-gradient(circle,var(--lime-soft) 0%,transparent 65%);opacity:.55;pointer-events:none;
+      }
+      .hero::after{
+        content:"";position:absolute;bottom:-320px;left:-220px;width:560px;height:560px;border-radius:50%;
+        background:radial-gradient(circle,var(--bg-3) 0%,transparent 65%);opacity:.7;pointer-events:none;
+      }
+      .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(2rem,5vw,4.5rem);align-items:center;}
+      .hero-copy .eyebrow{margin-bottom:1.4rem;}
+      .hero-copy h1{margin-bottom:1.5rem;}
+      .hero-copy .lede{max-width:34rem;margin:0 0 2.2rem;}
+      .hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center;}
+      .hero-note{margin-top:1.6rem;display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--ink-mute);font-weight:600;}
+      .hero-note svg{color:var(--lime-ink);flex:none;}
+      .hero-visual{position:relative;min-height:480px;}
+      .hero-img-main{
+        position:absolute;inset:0 0 12% 10%;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);
+      }
+      .hero-img-main img,.hero-img-sub img{width:100%;height:100%;object-fit:cover;}
+      .hero-img-sub{
+        position:absolute;left:0;bottom:0;width:52%;aspect-ratio:4/3.1;border-radius:var(--radius);
+        overflow:hidden;box-shadow:var(--shadow-md);border:6px solid var(--bg);
+      }
+      .float-card{
+        position:absolute;display:flex;gap:.8rem;align-items:flex-start;background:var(--surface);
+        border:1px solid var(--line-soft);border-radius:18px;box-shadow:var(--shadow-md);
+        padding:.95rem 1.1rem;max-width:250px;z-index:3;
+      }
+      .float-card .fc-icon{
+        width:40px;height:40px;flex:none;border-radius:12px;background:var(--lime-soft);
+        display:grid;place-items:center;color:var(--lime-ink);
+      }
+      .float-card strong{display:block;font-size:.95rem;line-height:1.3;color:var(--ink);}
+      .float-card span{font-size:.8rem;color:var(--ink-mute);line-height:1.45;display:block;margin-top:.15rem;}
+      .float-1{top:5%;right:0;animation:floatY 7s ease-in-out infinite;}
+      .float-2{bottom:16%;right:2%;animation:floatY 8s ease-in-out infinite reverse;}
+      @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+      .hero-ring{
+        position:absolute;top:-34px;left:2%;width:120px;height:120px;border-radius:50%;
+        border:1.5px dashed color-mix(in srgb,var(--forest) 35%,transparent);animation:spinSlow 40s linear infinite;z-index:0;
+      }
+      @keyframes spinSlow{to{transform:rotate(360deg)}}
+      .scroll-hint{
+        position:absolute;left:50%;transform:translateX(-50%);bottom:1.1rem;z-index:2;
+        display:flex;flex-direction:column;align-items:center;gap:.45rem;color:var(--ink-mute);
+        font-size:.68rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase;text-decoration:none;
+      }
+      .scroll-hint .line{width:1.5px;height:38px;background:var(--line);position:relative;overflow:hidden;border-radius:2px;}
+      .scroll-hint .line::after{content:"";position:absolute;left:0;top:-40%;width:100%;height:40%;background:var(--lime-ink);animation:scrollDrop 2.2s var(--ease) infinite;}
+      @keyframes scrollDrop{0%{top:-40%}60%,100%{top:110%}}
+      @media (max-width:960px){
+        .hero-grid{grid-template-columns:1fr;}
+        .hero-visual{min-height:420px;margin-top:.5rem;}
+        .scroll-hint{display:none;}
+      }
+      @media (max-width:520px){
+        .hero-visual{min-height:360px;}
+        .float-card{max-width:210px;padding:.8rem .9rem;}
+        .float-2{bottom:6%;}
+        .hero-img-sub{width:56%;}
+      }
+
+      /* ---------- Trust strip ---------- */
+      .trust{border-block:1px solid var(--line-soft);background:var(--surface-soft);}
+      .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);}
+      .trust-item{
+        display:flex;gap:1rem;align-items:flex-start;padding:1.9rem 1.6rem;
+        border-left:1px solid var(--line-soft);
+      }
+      .trust-item:first-child{border-left:none;padding-left:0;}
+      .trust-item .t-icon{
+        width:46px;height:46px;flex:none;border-radius:14px;background:var(--bg-2);
+        display:grid;place-items:center;color:var(--forest-2);
+      }
+      @media (prefers-color-scheme: dark){.trust-item .t-icon{color:var(--lime);}}
+      .trust-item strong{display:block;font-size:1rem;line-height:1.35;color:var(--ink);}
+      .trust-item span{font-size:.86rem;color:var(--ink-mute);line-height:1.5;display:block;margin-top:.2rem;}
+      @media (max-width:960px){.trust-grid{grid-template-columns:1fr 1fr}.trust-item{padding:1.5rem 1.2rem}.trust-item:nth-child(odd){border-left:none;padding-left:0}.trust-item:nth-child(n+3){border-top:1px solid var(--line-soft);}}
+      @media (max-width:520px){.trust-grid{grid-template-columns:1fr}.trust-item{border-left:none;padding-left:0;border-top:1px solid var(--line-soft)}.trust-item:first-child{border-top:none}}
+
+      /* ---------- Section shells ---------- */
+      .section{padding:clamp(4.5rem,9vw,7.5rem) 0;}
+      .section-head{max-width:44rem;margin-bottom:clamp(2.4rem,5vw,3.6rem);}
+      .section-head.center{margin-inline:auto;text-align:center;}
+      .section-head .eyebrow{margin-bottom:1.1rem;}
+      .section-head p{color:var(--ink-soft);margin:1.1rem 0 0;font-size:1.05rem;}
+
+      /* ---------- Services ---------- */
+      .services-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1.4rem;}
+      .svc-card{
+        position:relative;border-radius:var(--radius-lg);overflow:hidden;background:var(--surface);
+        border:1px solid var(--line-soft);box-shadow:var(--shadow-sm);
+        transition:transform .5s var(--ease),box-shadow .5s var(--ease);
+        display:flex;flex-direction:column;text-decoration:none;
+      }
+      .svc-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);}
+      .svc-card .svc-media{overflow:hidden;position:relative;}
+      .svc-card .svc-media img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease);}
+      .svc-card:hover .svc-media img{transform:scale(1.07);}
+      .svc-card .svc-body{padding:1.7rem 1.8rem 1.8rem;display:flex;flex-direction:column;gap:.55rem;flex:1;}
+      .svc-card h3{font-size:1.65rem;}
+      .svc-card p{margin:0;color:var(--ink-soft);font-size:.97rem;line-height:1.6;flex:1;}
+      .svc-link{
+        display:inline-flex;align-items:center;gap:.5rem;font-weight:800;font-size:.9rem;color:var(--forest-2);margin-top:.7rem;
+      }
+      @media (prefers-color-scheme: dark){.svc-link{color:var(--lime);}}
+      .svc-link .arr-circle{
+        width:32px;height:32px;border-radius:50%;border:1.5px solid currentColor;display:grid;place-items:center;
+        transition:background .35s var(--ease),transform .35s var(--ease);
+      }
+      .svc-card:hover .arr-circle{background:var(--lime);border-color:var(--lime);color:var(--forest-deep);transform:rotate(-38deg);}
+      .svc-1{grid-column:span 7;}.svc-2{grid-column:span 5;}.svc-3{grid-column:span 5;}.svc-4{grid-column:span 7;}
+      .svc-1 .svc-media,.svc-4 .svc-media{aspect-ratio:16/8.2;}
+      .svc-2 .svc-media,.svc-3 .svc-media{aspect-ratio:16/9.6;}
+      @media (max-width:860px){
+        .svc-1,.svc-2,.svc-3,.svc-4{grid-column:span 12;}
+        .svc-card .svc-media{aspect-ratio:16/9 !important;}
+      }
+
+      /* ---------- How it works ---------- */
+      .how{background:var(--forest-deep);color:#EFEDE2;}
+      .how .h-section{color:#F4F2E8;}
+      .how .h-section em{color:var(--lime);}
+      .how .section-head p{color:#BFC4B4;}
+      .how .eyebrow{color:var(--lime);}
+      .steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem;margin-top:1rem;}
+      .steps::before{
+        content:"";position:absolute;top:34px;left:6%;right:6%;height:2px;
+        background:rgba(255,255,255,.14);border-radius:2px;
+      }
+      .steps .progress-line{
+        position:absolute;top:34px;left:6%;height:2px;width:0;background:var(--lime);border-radius:2px;
+        transition:width 1.6s var(--ease) .2s;
+      }
+      .steps.in .progress-line{width:88%;}
+      .step{position:relative;padding-top:0;}
+      .step-num{
+        width:68px;height:68px;border-radius:50%;background:#22392B;border:1px solid rgba(255,255,255,.16);
+        display:grid;place-items:center;font-family:var(--font-serif);font-size:1.5rem;font-weight:700;color:var(--lime);
+        position:relative;z-index:1;margin-bottom:1.4rem;
+      }
+      .step h3{color:#F4F2E8;font-size:1.55rem;margin-bottom:.55rem;}
+      .step p{color:#BFC4B4;margin:0;font-size:.97rem;max-width:19rem;}
+      @media (max-width:860px){
+        .steps{grid-template-columns:1fr;gap:2.6rem;}
+        .steps::before{left:33px;right:auto;top:4%;bottom:4%;width:2px;height:auto;}
+        .steps .progress-line{left:33px;top:4%;width:2px !important;height:0;transition:height 1.6s var(--ease) .2s;}
+        .steps.in .progress-line{height:88%;}
+        .step{display:grid;grid-template-columns:68px 1fr;gap:1.3rem;}
+        .step-num{margin-bottom:0;}
+      }
+
+      /* ---------- About ---------- */
+      .about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(2.2rem,5vw,4.5rem);align-items:center;}
+      .about-media{position:relative;}
+      .about-media .main-img{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);aspect-ratio:3/3.6;}
+      .about-media .main-img img{width:100%;height:100%;object-fit:cover;}
+      .about-badge{
+        position:absolute;right:-14px;bottom:34px;background:var(--forest);color:#F2F0E4;border-radius:18px;
+        padding:1rem 1.2rem;box-shadow:var(--shadow-md);max-width:230px;
+      }
+      .about-badge strong{font-family:var(--font-serif);font-size:1.2rem;display:block;line-height:1.2;}
+      .about-badge span{font-size:.8rem;color:#C9CDBE;line-height:1.45;display:block;margin-top:.25rem;}
+      .about-copy p{color:var(--ink-soft);margin:0 0 1.15rem;}
+      .about-points{display:grid;gap:.85rem;margin:1.6rem 0 2rem;}
+      .about-points li{
+        list-style:none;display:flex;gap:.75rem;align-items:flex-start;font-weight:600;color:var(--ink);font-size:.99rem;
+      }
+      .about-points{padding:0;}
+      .about-points .tick{
+        width:24px;height:24px;flex:none;border-radius:50%;background:var(--lime-soft);color:var(--lime-ink);
+        display:grid;place-items:center;margin-top:.1rem;
+      }
+      @media (max-width:900px){.about-grid{grid-template-columns:1fr}.about-media .main-img{aspect-ratio:4/3.4}.about-badge{right:12px}}
+
+      /* ---------- Coverage ---------- */
+      .coverage{background:var(--bg-2);}
+      .coverage-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2.2rem,5vw,4.5rem);align-items:center;}
+      .coverage-visual{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);aspect-ratio:4/3;}
+      .coverage-visual img{width:100%;height:100%;object-fit:cover;}
+      .map-card{
+        position:absolute;left:18px;bottom:18px;background:color-mix(in srgb,var(--surface) 92%,transparent);
+        backdrop-filter:blur(8px);border:1px solid var(--line-soft);border-radius:16px;padding:.85rem 1.05rem;
+        display:flex;gap:.75rem;align-items:center;box-shadow:var(--shadow-sm);max-width:calc(100% - 36px);
+      }
+      .map-card .pin{
+        width:38px;height:38px;flex:none;border-radius:50%;background:var(--forest);color:var(--lime);
+        display:grid;place-items:center;
+      }
+      .map-card strong{display:block;font-size:.92rem;line-height:1.3;}
+      .map-card span{font-size:.78rem;color:var(--ink-mute);}
+      .coverage-copy p{color:var(--ink-soft);margin:0 0 1.2rem;}
+      .coverage-tags{display:flex;flex-wrap:wrap;gap:.55rem;margin:1.4rem 0 2rem;}
+      .coverage-tags span{
+        border:1px solid var(--line);border-radius:999px;padding:.42rem .95rem;font-size:.85rem;font-weight:700;color:var(--ink-soft);background:var(--surface);
+      }
+      @media (max-width:900px){.coverage-grid{grid-template-columns:1fr}}
+
+      /* ---------- Testimonials ---------- */
+      .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;}
+      .testi-card{
+        background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);
+        padding:2rem 1.8rem;box-shadow:var(--shadow-sm);position:relative;display:flex;flex-direction:column;gap:1rem;
+      }
+      .testi-card .quote-mark{font-family:var(--font-serif);font-size:3.4rem;line-height:.6;color:var(--lime);height:1.4rem;}
+      .testi-card p{margin:0;color:var(--ink-soft);font-style:italic;font-family:var(--font-serif);font-size:1.22rem;line-height:1.45;flex:1;}
+      .placeholder-tag{
+        display:inline-flex;align-items:center;gap:.45rem;align-self:flex-start;
+        font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+        background:var(--lime-soft);color:var(--lime-ink);border-radius:999px;padding:.34rem .75rem;
+      }
+      .testi-who{font-size:.86rem;color:var(--ink-mute);font-weight:600;border-top:1px dashed var(--line);padding-top:1rem;}
+      @media (max-width:900px){.testi-grid{grid-template-columns:1fr}}
+
+      /* ---------- FAQ ---------- */
+      .faq-wrap{max-width:820px;margin-inline:auto;}
+      .faq-item{border:1px solid var(--line-soft);border-radius:18px;background:var(--surface);margin-bottom:.9rem;overflow:hidden;transition:box-shadow .35s var(--ease),border-color .35s;}
+      .faq-item.open{box-shadow:var(--shadow-md);border-color:var(--line);}
+      .faq-q{
+        width:100%;display:flex;align-items:center;gap:1rem;text-align:left;background:none;border:none;cursor:pointer;
+        padding:1.3rem 1.5rem;font-size:1.06rem;font-weight:700;color:var(--ink);
+      }
+      .faq-q .faq-icon{
+        margin-left:auto;width:34px;height:34px;flex:none;border-radius:50%;background:var(--bg-2);
+        display:grid;place-items:center;color:var(--forest-2);transition:transform .45s var(--ease),background .3s;
+      }
+      @media (prefers-color-scheme: dark){.faq-q .faq-icon{color:var(--lime);}}
+      .faq-item.open .faq-icon{transform:rotate(45deg);background:var(--lime);color:var(--forest-deep);}
+      .faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease);}
+      .faq-item.open .faq-a{grid-template-rows:1fr;}
+      .faq-a-inner{overflow:hidden;}
+      .faq-a p{margin:0;padding:0 1.5rem 1.4rem;color:var(--ink-soft);font-size:.99rem;max-width:44rem;}
+
+      /* ---------- Contact ---------- */
+      .contact{background:var(--forest-deep);color:#EFEDE2;position:relative;overflow:hidden;}
+      .contact::before{
+        content:"";position:absolute;top:-200px;right:-160px;width:520px;height:520px;border-radius:50%;
+        background:radial-gradient(circle,rgba(185,217,76,.16) 0%,transparent 65%);pointer-events:none;
+      }
+      .contact-grid{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2.4rem,5vw,4.5rem);}
+      .contact .h-section{color:#F4F2E8;}
+      .contact .h-section em{color:var(--lime);}
+      .contact .eyebrow{color:var(--lime);}
+      .contact-copy p{color:#BFC4B4;margin:1.1rem 0 0;max-width:26rem;}
+      .contact-points{display:grid;gap:1.05rem;margin-top:2.2rem;}
+      .contact-points .cp{display:flex;gap:.85rem;align-items:flex-start;}
+      .contact-points .cp-icon{width:42px;height:42px;flex:none;border-radius:12px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);display:grid;place-items:center;color:var(--lime);}
+      .contact-points strong{display:block;font-size:.98rem;color:#F4F2E8;}
+      .contact-points span{font-size:.88rem;color:#A9AE9D;}
+      .form-card{
+        background:var(--surface);color:var(--ink);border-radius:var(--radius-lg);
+        padding:clamp(1.6rem,3.5vw,2.4rem);box-shadow:var(--shadow-lg);position:relative;
+      }
+      .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.05rem;}
+      .field{display:flex;flex-direction:column;gap:.4rem;}
+      .field.full{grid-column:1/-1;}
+      .field label{font-size:.85rem;font-weight:700;color:var(--ink);}
+      .field label .opt{color:var(--ink-mute);font-weight:600;}
+      .field input,.field select,.field textarea{
+        font-family:inherit;font-size:.97rem;color:var(--ink);background:var(--surface-soft);
+        border:1.5px solid var(--line);border-radius:13px;padding:.82rem 1rem;width:100%;
+        transition:border-color .25s,box-shadow .25s,background .25s;appearance:none;
+      }
+      .field textarea{resize:vertical;min-height:104px;}
+      .field input::placeholder,.field textarea::placeholder{color:var(--ink-mute);}
+      .field input:focus,.field select:focus,.field textarea:focus{
+        outline:none;border-color:var(--forest-2);box-shadow:0 0 0 4px var(--lime-soft);background:var(--surface);
+      }
+      .field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--error);background:var(--error-bg);}
+      .field .err{display:none;font-size:.8rem;font-weight:600;color:var(--error);}
+      .field.invalid .err{display:block;}
+      .select-wrap{position:relative;}
+      .select-wrap::after{
+        content:"";position:absolute;right:1rem;top:50%;width:9px;height:9px;pointer-events:none;
+        border-right:2px solid var(--ink-mute);border-bottom:2px solid var(--ink-mute);
+        transform:translateY(-70%) rotate(45deg);
+      }
+      .demo-note{
+        display:flex;gap:.6rem;align-items:flex-start;font-size:.82rem;color:var(--ink-mute);
+        background:var(--bg-2);border:1px dashed var(--line);border-radius:12px;padding:.75rem .9rem;margin-top:1.15rem;line-height:1.5;
+      }
+      .demo-note svg{flex:none;margin-top:.1rem;color:var(--lime-ink);}
+      .submit-btn{width:100%;justify-content:center;margin-top:1.2rem;font-size:1rem;padding:1.05rem;}
+      .submit-btn .spinner{
+        width:18px;height:18px;border-radius:50%;border:2.5px solid rgba(255,255,255,.35);
+        border-top-color:#fff;animation:spin .7s linear infinite;display:none;flex:none;
+      }
+      .submit-btn.loading .spinner{display:block;}
+      .submit-btn.loading .btn-label,.submit-btn.loading .arr{opacity:.55;}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      .form-success{display:none;text-align:center;padding:2rem .5rem;}
+      .form-success.show{display:block;animation:fadeUp .6s var(--ease);}
+      @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+      .success-icon{
+        width:74px;height:74px;margin:0 auto 1.2rem;border-radius:50%;background:var(--lime-soft);
+        display:grid;place-items:center;color:var(--lime-ink);
+      }
+      .form-success h3{font-size:1.7rem;margin-bottom:.5rem;}
+      .form-success p{color:var(--ink-soft);margin:0 auto 1.5rem;max-width:24rem;font-size:.97rem;}
+      form.hidden{display:none;}
+      @media (max-width:900px){.contact-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}}
+
+      /* ---------- Footer ---------- */
+      footer{background:var(--forest-deep);color:#C9CDBE;border-top:1px solid rgba(255,255,255,.07);}
+      .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:2.6rem;padding:4.2rem 0 3rem;}
+      footer .wordmark{color:#F4F2E8;}
+      footer .wordmark small{color:#8E937F;}
+      .footer-desc{font-size:.93rem;line-height:1.65;margin:1.1rem 0 1.5rem;max-width:19rem;color:#A9AE9D;}
+      footer h4{font-family:var(--font-sans);font-size:.78rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#F4F2E8;margin:0 0 1.1rem;}
+      .footer-links{list-style:none;margin:0;padding:0;display:grid;gap:.6rem;}
+      .footer-links a{color:#C9CDBE;text-decoration:none;font-size:.94rem;transition:color .25s;}
+      .footer-links a:hover{color:var(--lime);}
+      .footer-contact{list-style:none;margin:0;padding:0;display:grid;gap:.7rem;font-size:.94rem;}
+      .footer-contact li{display:flex;gap:.6rem;align-items:flex-start;}
+      .footer-contact svg{flex:none;margin-top:.2rem;color:var(--lime);}
+      .socials{display:flex;gap:.6rem;}
+      .socials a{
+        width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.2);
+        display:grid;place-items:center;color:#E7E5D6;transition:background .3s,border-color .3s,transform .3s;text-decoration:none;
+      }
+      .socials a:hover{background:var(--lime);border-color:var(--lime);color:var(--forest-deep);transform:translateY(-3px);}
+      .footer .lang-btn{border-color:rgba(255,255,255,.25);color:#F0EEE2;background:rgba(255,255,255,.07);padding:.6rem 1rem;}
+      .footer-bottom{
+        border-top:1px solid rgba(255,255,255,.09);padding:1.4rem 0 1.6rem;
+        display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;font-size:.85rem;color:#8E937F;
+      }
+      .footer-legal{display:flex;gap:1.5rem;}
+      .footer-legal a{color:#C9CDBE;text-decoration:none;}
+      .footer-legal a:hover{color:var(--lime);}
+      @media (max-width:960px){.footer-grid{grid-template-columns:1fr 1fr}}
+      @media (max-width:540px){.footer-grid{grid-template-columns:1fr}}
+
+      /* ---------- Custom cursor ---------- */
+      .cursor-dot,.cursor-ring{
+        position:fixed;top:0;left:0;pointer-events:none;z-index:200;border-radius:50%;
+        transform:translate(-50%,-50%);display:none;
+      }
+      .cursor-dot{width:7px;height:7px;background:var(--lime-ink);}
+      .cursor-ring{
+        width:38px;height:38px;border:1.5px solid color-mix(in srgb,var(--lime-ink) 65%,transparent);
+        transition:width .3s var(--ease),height .3s var(--ease),background .3s,border-color .3s;
+        display:none;align-items:center;justify-content:center;
+      }
+      .cursor-ring .cursor-label{
+        font-size:.6rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--forest-deep);
+        opacity:0;transition:opacity .2s;white-space:nowrap;padding:0 .4rem;text-align:center;line-height:1.2;
+      }
+      .cursor-ring.grow{width:58px;height:58px;background:color-mix(in srgb,var(--lime) 22%,transparent);}
+      .cursor-ring.labelled{width:74px;height:74px;background:var(--lime);border-color:var(--lime);}
+      .cursor-ring.labelled .cursor-label{opacity:1;}
+      body.cursor-on .cursor-dot{display:block;}
+      body.cursor-on .cursor-ring{display:flex;}
+
+      @media (prefers-reduced-motion: reduce){
+        html{scroll-behavior:auto;}
+        *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
+        .rv{opacity:1 !important;transform:none !important;}
+        .rv-img::after{transform:scaleY(0) !important;}
+        .steps .progress-line{transition:none;}
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Custom cursor (desktop, pointer-fine only) -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"><span class="cursor-label"></span></div>
+
+    <!-- A. Announcement bar -->
+    <div class="announce" id="announceBar">
+      <div class="announce-inner">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span data-i18n="announce">Your home, taken care of across Murcia.</span>
+      </div>
+      <button class="announce-close" id="announceClose" aria-label="Dismiss announcement">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- B. Header -->
+    <header class="site-header" id="siteHeader">
+      <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="Verde Casa — home">Verde&nbsp;Casa<span class="dot">.</span><small>Murcia</small></a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#how" data-i18n="nav.how">How It Works</a>
+          <a href="#about" data-i18n="nav.about">About Us</a>
+          <a href="#faqs" data-i18n="nav.faqs">FAQs</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <div class="lang-select" data-lang-select>
+            <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.9 5.7 3.9 9S14.5 18.4 12 21c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3Z"/></svg>
+              <span data-lang-current>EN</span>
+              <svg class="chev" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="lang-menu" role="listbox" aria-label="Language">
+              <template>
+              <button type="button" role="option" data-lang="en" aria-checked="true"><span class="code">EN</span> English <svg class="check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></button>
+              <button type="button" role="option" data-lang="es" aria-checked="false"><span class="code">ES</span> Español <svg class="check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></button>
+              <button type="button" role="option" data-lang="nl" aria-checked="false"><span class="code">NL</span> Nederlands <svg class="check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></button>
+              <button type="button" role="option" data-lang="de" aria-checked="false"><span class="code">DE</span> Deutsch <svg class="check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></button>
+              </template>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary header-cta magnetic"><span data-i18n="nav.quote">Request a Quote</span></a>
+          <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav aria-label="Mobile">
+        <a href="#services"><small>01</small><span data-i18n="nav.services">Services</span></a>
+        <a href="#how"><small>02</small><span data-i18n="nav.how">How It Works</span></a>
+        <a href="#about"><small>03</small><span data-i18n="nav.about">About Us</span></a>
+        <a href="#faqs"><small>04</small><span data-i18n="nav.faqs">FAQs</span></a>
+        <a href="#contact"><small>05</small><span data-i18n="nav.contact">Contact</span></a>
+      </nav>
+      <div class="mm-foot">
+        <div class="lang-select" data-lang-select>
+          <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span data-lang-current>EN</span>
+            <svg class="chev" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="lang-menu" role="listbox" aria-label="Language">
+            <template>
+            <button type="button" role="option" data-lang="en" aria-checked="true"><span class="code">EN</span> English</button>
+            <button type="button" role="option" data-lang="es" aria-checked="false"><span class="code">ES</span> Español</button>
+            <button type="button" role="option" data-lang="nl" aria-checked="false"><span class="code">NL</span> Nederlands</button>
+            <button type="button" role="option" data-lang="de" aria-checked="false"><span class="code">DE</span> Deutsch</button>
+            </template>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-lime" data-mm-link><span data-i18n="nav.quote">Request a Quote</span></a>
+      </div>
+    </div>
+
+    <main id="top">
+      <!-- C. Hero -->
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow rv" data-i18n="hero.eyebrow">Home Services · Murcia, Spain</span>
+            <h1 class="h-display rv rv-d1" id="heroTitle" data-i18n-html="hero.title">Your Home.<br /><em>In Good Hands.</em></h1>
+            <p class="lede rv rv-d2" data-i18n="hero.sub">Reliable home services for homeowners and property owners across Murcia. Professional care, tailored to your needs.</p>
+            <div class="hero-ctas rv rv-d3">
+              <a href="#contact" class="btn btn-primary magnetic"><span data-i18n="hero.cta1">Request a Free Quote</span>
+                <svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a href="#services" class="btn btn-ghost magnetic"><span data-i18n="hero.cta2">Explore Our Services</span></a>
+            </div>
+            <div class="hero-note rv rv-d4">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              <span data-i18n="hero.note">Free, no-obligation quotes — in your language</span>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="false">
+            <div class="hero-ring" aria-hidden="true"></div>
+            <div class="hero-img-main rv-img" data-parallax="14">
+              <img src="images/img-1.jpg" alt="Whitewashed Mediterranean villa with a pool, olive trees and bougainvillea in the Murcia countryside" fetchpriority="high" />
+            </div>
+            <div class="hero-img-sub rv-img" data-parallax="30" style="transition-delay:.15s">
+              <img src="images/img-2.jpg" alt="Bright Mediterranean living room with white walls, linen sofas and natural light" loading="lazy" />
+            </div>
+            <div class="float-card float-1 rv rv-d3">
+              <div class="fc-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.3-7-11a7 7 0 0 1 14 0c0 5.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              </div>
+              <div>
+                <strong data-i18n="hero.card1t">Local support</strong>
+                <span data-i18n="hero.card1s">Based right here in Murcia</span>
+              </div>
+            </div>
+            <div class="float-card float-2 rv rv-d4">
+              <div class="fc-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C7 16.5 3 13.3 3 9.3 3 6.4 5.2 4.5 7.7 4.5c1.7 0 3.3.9 4.3 2.4 1-1.5 2.6-2.4 4.3-2.4 2.5 0 4.7 1.9 4.7 4.8 0 4-4 7.2-9 11.7Z"/></svg>
+              </div>
+              <div>
+                <strong data-i18n="hero.card2t">Care you can count on</strong>
+                <span data-i18n="hero.card2s">Considered, consistent, personal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-hint" href="#services" aria-label="Scroll to services">
+          <span data-i18n="hero.scroll">Scroll</span><span class="line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <!-- D. Trust strip -->
+      <section class="trust" aria-label="Why choose us">
+        <div class="wrap trust-grid">
+          <div class="trust-item rv">
+            <div class="t-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.3-7-11a7 7 0 0 1 14 0c0 5.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+            <div><strong data-i18n="trust.1t">Local service across Murcia</strong><span data-i18n="trust.1s">One regional team for your home, wherever it is in Murcia.</span></div>
+          </div>
+          <div class="trust-item rv rv-d1">
+            <div class="t-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h13M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18.5" cy="18" r="2"/></svg></div>
+            <div><strong data-i18n="trust.2t">Flexible service options</strong><span data-i18n="trust.2s">One-off visits or regular care — shaped around your home.</span></div>
+          </div>
+          <div class="trust-item rv rv-d2">
+            <div class="t-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H4l2.3-2.9A8 8 0 1 1 21 12Z"/><path d="M8.5 11h7M8.5 14h4"/></svg></div>
+            <div><strong data-i18n="trust.3t">Clear communication</strong><span data-i18n="trust.3s">Straightforward updates before, during and after every visit.</span></div>
+          </div>
+          <div class="trust-item rv rv-d3">
+            <div class="t-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.9 5.7 3.9 9s-1.4 6.4-3.9 9c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3Z"/></svg></div>
+            <div><strong data-i18n="trust.4t">Support in multiple languages</strong><span data-i18n="trust.4s">English, Spanish, Dutch/Flemish and German.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- E. Services -->
+      <section class="section" id="services" aria-labelledby="servicesTitle">
+        <div class="wrap">
+          <div class="section-head rv">
+            <span class="eyebrow" data-i18n="services.eyebrow">Our Services</span>
+            <h2 class="h-section" id="servicesTitle" data-i18n-html="services.title">Everything Your Home <em>Needs.</em></h2>
+            <p data-i18n="services.intro">From regular cleaning to looking after a holiday home while you're away — one trusted point of contact for the care of your property.</p>
+          </div>
+          <div class="services-grid">
+            <a class="svc-card svc-1 rv-card" href="#contact" data-service="cleaning" data-cursor="view">
+              <div class="svc-media"><img src="images/img-3.jpg" alt="Professional cleaner polishing a bright Mediterranean kitchen counter" loading="lazy" /></div>
+              <div class="svc-body">
+                <h3 data-i18n="svc.1t">Home Cleaning</h3>
+                <p data-i18n="svc.1d">Regular and one-off cleaning that keeps your home fresh, calm and guest-ready — kitchens, bathrooms, living spaces and terraces.</p>
+                <span class="svc-link"><span data-i18n="svc.enquire">Enquire about this service</span><span class="arr-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+              </div>
+            </a>
+            <a class="svc-card svc-2 rv-card" href="#contact" data-service="maintenance" data-cursor="view">
+              <div class="svc-media"><img src="images/img-4.jpg" alt="Gardener tending a lush Mediterranean garden beside a white villa" loading="lazy" /></div>
+              <div class="svc-body">
+                <h3 data-i18n="svc.2t">Property Maintenance</h3>
+                <p data-i18n="svc.2d">Ongoing care for your property inside and out — garden upkeep, pool areas and routine checks that keep everything running smoothly.</p>
+                <span class="svc-link"><span data-i18n="svc.enquire">Enquire about this service</span><span class="arr-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+              </div>
+            </a>
+            <a class="svc-card svc-3 rv-card" href="#contact" data-service="handyman" data-cursor="view">
+              <div class="svc-media"><img src="images/img-5.jpg" alt="Handyman fitting a wooden shelf in a bright Mediterranean home" loading="lazy" /></div>
+              <div class="svc-body">
+                <h3 data-i18n="svc.3t">Handyman Services</h3>
+                <p data-i18n="svc.3d">Repairs, fittings and small jobs handled properly — the practical help that keeps a home in good order, without the hassle.</p>
+                <span class="svc-link"><span data-i18n="svc.enquire">Enquire about this service</span><span class="arr-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+              </div>
+            </a>
+            <a class="svc-card svc-4 rv-card" href="#contact" data-service="holiday" data-cursor="view">
+              <div class="svc-media"><img src="images/img-6.jpg" alt="Holiday villa terrace with pool prepared for arriving guests at golden hour" loading="lazy" /></div>
+              <div class="svc-body">
+                <h3 data-i18n="svc.4t">Holiday Home Care</h3>
+                <p data-i18n="svc.4d">Changeovers, laundry, guest preparation and peace of mind while you're away — your second home, looked after as carefully as our own.</p>
+                <span class="svc-link"><span data-i18n="svc.enquire">Enquire about this service</span><span class="arr-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- F. How It Works -->
+      <section class="section how" id="how" aria-labelledby="howTitle">
+        <div class="wrap">
+          <div class="section-head rv">
+            <span class="eyebrow" data-i18n="how.eyebrow">How It Works</span>
+            <h2 class="h-section" id="howTitle" data-i18n-html="how.title">Getting Started Is <em>Simple.</em></h2>
+            <p data-i18n="how.intro">No complicated booking systems and no obligation. Three unhurried steps between you and a well-cared-for home.</p>
+          </div>
+          <div class="steps" id="stepsTimeline">
+            <div class="progress-line" aria-hidden="true"></div>
+            <div class="step rv">
+              <div class="step-num">01</div>
+              <div>
+                <h3 data-i18n="how.1t">Tell Us What You Need</h3>
+                <p data-i18n="how.1d">Send a short enquiry using the form below — tell us about your home, where it is, and the kind of help you're looking for.</p>
+              </div>
+            </div>
+            <div class="step rv rv-d1">
+              <div class="step-num">02</div>
+              <div>
+                <h3 data-i18n="how.2t">Discuss Your Requirements</h3>
+                <p data-i18n="how.2d">We'll talk through the details with you — in your preferred language — and answer any questions before anything is agreed.</p>
+              </div>
+            </div>
+            <div class="step rv rv-d2">
+              <div class="step-num">03</div>
+              <div>
+                <h3 data-i18n="how.3t">Get a Tailored Service Plan</h3>
+                <p data-i18n="how.3d">Receive a clear, personalised plan and quote for your home. Only when you're happy with it does the service begin.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about" aria-labelledby="aboutTitle">
+        <div class="wrap about-grid">
+          <div class="about-media">
+            <div class="main-img rv-img"><img src="images/img-7.jpg" alt="A member of the Verde Casa team welcoming you at the door of a Mediterranean home in Murcia" loading="lazy" /></div>
+            <div class="about-badge">
+              <strong data-i18n="about.badgeT">Personal, not corporate</strong>
+              <span data-i18n="about.badgeS">A small local team you can actually talk to.</span>
+            </div>
+          </div>
+          <div class="about-copy">
+            <span class="eyebrow rv" data-i18n="about.eyebrow">About Us</span>
+            <h2 class="h-section rv rv-d1" id="aboutTitle" style="margin:1rem 0 1.3rem" data-i18n-html="about.title">Care, Rooted <em>in Murcia.</em></h2>
+            <p class="rv rv-d2" data-i18n="about.p1">Verde Casa exists for one simple reason: a home in Murcia deserves looking after by people who know and love the region. Whether you live here year-round or visit when you can, we take care of the practical side — so your home is always as welcoming as the day you arrived.</p>
+            <p class="rv rv-d2" data-i18n="about.p2">Every arrangement starts with a conversation, not a contract. We listen to what your home needs, agree a plan that fits, and keep you informed in the language you're most comfortable with.</p>
+            <ul class="about-points rv rv-d3">
+              <li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span data-i18n="about.pt1">One point of contact for every service</span></li>
+              <li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span data-i18n="about.pt2">Plans tailored to each individual property</span></li>
+              <li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span data-i18n="about.pt3">Friendly updates after every visit</span></li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost magnetic rv rv-d3"><span data-i18n="about.cta">Start a Conversation</span>
+              <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- G. Coverage -->
+      <section class="section coverage" id="coverage" aria-labelledby="coverageTitle">
+        <div class="wrap coverage-grid">
+          <div class="coverage-copy">
+            <span class="eyebrow rv" data-i18n="coverage.eyebrow">Where We Work</span>
+            <h2 class="h-section rv rv-d1" id="coverageTitle" style="margin:1rem 0 1.3rem" data-i18n-html="coverage.title">Here for Homes <em>Across Murcia.</em></h2>
+            <p class="rv rv-d2" data-i18n="coverage.p1">From city apartments to countryside villas and coastal holiday homes, we care for properties throughout the Region of Murcia — the city, the huerta, the coast and everywhere in between.</p>
+            <p class="rv rv-d2" data-i18n="coverage.p2">Not sure whether we can reach your property? Tell us where your home is in the enquiry form and we'll happily confirm.</p>
+            <div class="coverage-tags rv rv-d3">
+              <span data-i18n="coverage.tag1">Region of Murcia</span>
+              <span data-i18n="coverage.tag2">City &amp; countryside homes</span>
+              <span data-i18n="coverage.tag3">Coastal properties</span>
+              <span data-i18n="coverage.tag4">Holiday homes</span>
+            </div>
+            <a href="#contact" class="btn btn-primary magnetic rv rv-d3"><span data-i18n="coverage.cta">Check Availability for Your Home</span>
+              <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+          <div class="coverage-visual rv-img">
+            <img src="images/img-8.jpg" alt="Aerial view of citrus groves, golden hills and villages across the Region of Murcia" loading="lazy" />
+            <div class="map-card">
+              <div class="pin"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.3-7-11a7 7 0 0 1 14 0c0 5.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+              <div>
+                <strong data-i18n="coverage.cardT">Region of Murcia, Spain</strong>
+                <span data-i18n="coverage.cardS">Serving homes across the region</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- I. Testimonials (placeholder) -->
+      <section class="section" id="testimonials" aria-labelledby="testiTitle">
+        <div class="wrap">
+          <div class="section-head center rv">
+            <span class="eyebrow center" data-i18n="testi.eyebrow">Client Stories</span>
+            <h2 class="h-section" id="testiTitle" data-i18n-html="testi.title">Kind Words, <em>Coming Soon.</em></h2>
+            <p data-i18n="testi.intro">This space is reserved for genuine feedback from the homeowners we work with. Real client testimonials will be published here as they are received.</p>
+          </div>
+          <div class="testi-grid">
+            <article class="testi-card rv">
+              <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+              <p data-i18n="testi.ph">Placeholder testimonial — genuine client feedback will appear here once available.</p>
+              <span class="placeholder-tag" data-i18n="testi.tag">Placeholder</span>
+              <div class="testi-who" data-i18n="testi.who">Client name to be added</div>
+            </article>
+            <article class="testi-card rv rv-d1">
+              <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+              <p data-i18n="testi.ph">Placeholder testimonial — genuine client feedback will appear here once available.</p>
+              <span class="placeholder-tag" data-i18n="testi.tag">Placeholder</span>
+              <div class="testi-who" data-i18n="testi.who">Client name to be added</div>
+            </article>
+            <article class="testi-card rv rv-d2">
+              <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+              <p data-i18n="testi.ph">Placeholder testimonial — genuine client feedback will appear here once available.</p>
+              <span class="placeholder-tag" data-i18n="testi.tag">Placeholder</span>
+              <div class="testi-who" data-i18n="testi.who">Client name to be added</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- J. FAQ -->
+      <section class="section" id="faqs" aria-labelledby="faqTitle" style="padding-top:0">
+        <div class="wrap">
+          <div class="section-head center rv">
+            <span class="eyebrow center" data-i18n="faq.eyebrow">FAQs</span>
+            <h2 class="h-section" id="faqTitle" data-i18n-html="faq.title">Questions, <em>Answered.</em></h2>
+          </div>
+          <div class="faq-wrap">
+            <div class="faq-item rv">
+              <button class="faq-q" type="button" aria-expanded="false">
+                <span data-i18n="faq.1q">What services are available?</span>
+                <span class="faq-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq.1a">We currently offer home cleaning, property maintenance, handyman services and holiday home care. If you need something a little different, just ask in your enquiry — arrangements can often be tailored to your home.</p></div></div>
+            </div>
+            <div class="faq-item rv">
+              <button class="faq-q" type="button" aria-expanded="false">
+                <span data-i18n="faq.2q">Which areas of Murcia do you cover?</span>
+                <span class="faq-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq.2a">We serve homes across the Region of Murcia. Share your property's location in the enquiry form and we'll confirm availability for your area before anything is arranged.</p></div></div>
+            </div>
+            <div class="faq-item rv">
+              <button class="faq-q" type="button" aria-expanded="false">
+                <span data-i18n="faq.3q">Can I request a quote before booking?</span>
+                <span class="faq-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq.3a">Yes — always. Every enquiry starts with a free, no-obligation quote based on your home and the services you need. Nothing is booked until you've seen the plan and are happy with it.</p></div></div>
+            </div>
+            <div class="faq-item rv">
+              <button class="faq-q" type="button" aria-expanded="false">
+                <span data-i18n="faq.4q">Which languages can I communicate in?</span>
+                <span class="faq-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq.4a">You can speak with us in English, Spanish, Dutch/Flemish or German. Simply choose your preferred language in the enquiry form and we'll reply accordingly.</p></div></div>
+            </div>
+            <div class="faq-item rv">
+              <button class="faq-q" type="button" aria-expanded="false">
+                <span data-i18n="faq.5q">How do I arrange a service?</span>
+                <span class="faq-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="faq-a"><div class="faq-a-inner"><p data-i18n="faq.5a">Fill in the enquiry form below with a few details about your home. We'll get in touch to discuss your requirements, then prepare a tailored service plan and quote for you to approve.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- K. Contact -->
+      <section class="section contact" id="contact" aria-labelledby="contactTitle">
+        <div class="wrap contact-grid">
+          <div class="contact-copy">
+            <span class="eyebrow rv" data-i18n="contact.eyebrow">Get In Touch</span>
+            <h2 class="h-section rv rv-d1" id="contactTitle" style="margin:1rem 0 0" data-i18n-html="contact.title">Let's Take Care of <em>Your Home.</em></h2>
+            <p class="rv rv-d2" data-i18n="contact.intro">Tell us a little about your home and what you need. We'll come back to you to discuss the details and prepare your free, tailored quote.</p>
+            <div class="contact-points">
+              <div class="cp rv rv-d2">
+                <div class="cp-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H4l2.3-2.9A8 8 0 1 1 21 12Z"/></svg></div>
+                <div><strong data-i18n="contact.cp1t">A reply in your language</strong><span data-i18n="contact.cp1s">English, Spanish, Dutch/Flemish or German.</span></div>
+              </div>
+              <div class="cp rv rv-d3">
+                <div class="cp-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12.5 11 14.5 15.5 9.5"/><path d="M12 21c-4.8-1.5-8-5.4-8-10.5V5.2L12 3l8 2.2v5.3c0 5.1-3.2 9-8 10.5Z"/></svg></div>
+                <div><strong data-i18n="contact.cp2t">No obligation, ever</strong><span data-i18n="contact.cp2s">Your quote is free and there's no pressure to proceed.</span></div>
+              </div>
+              <div class="cp rv rv-d4">
+                <div class="cp-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg></div>
+                <div><strong data-i18n="contact.cp3t">A prompt, personal response</strong><span data-i18n="contact.cp3s">We read every enquiry ourselves and reply personally.</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-card rv">
+            <form id="enquiryForm" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="fName" data-i18n="form.name">Full name</label>
+                  <input id="fName" name="name" type="text" autocomplete="name" data-i18n-ph="form.namePh" placeholder="Your full name" />
+                  <span class="err" data-i18n="err.name">Please enter your full name.</span>
+                </div>
+                <div class="field">
+                  <label for="fEmail" data-i18n="form.email">Email address</label>
+                  <input id="fEmail" name="email" type="email" autocomplete="email" data-i18n-ph="form.emailPh" placeholder="you@example.com" />
+                  <span class="err" data-i18n="err.email">Please enter a valid email address.</span>
+                </div>
+                <div class="field">
+                  <label for="fPhone"><span data-i18n="form.phone">Phone number</span> <span class="opt" data-i18n="form.optional">(optional)</span></label>
+                  <input id="fPhone" name="phone" type="tel" autocomplete="tel" data-i18n-ph="form.phonePh" placeholder="+34 600 000 000" />
+                  <span class="err" data-i18n="err.phone">Please enter a valid phone number, or leave this field empty.</span>
+                </div>
+                <div class="field">
+                  <label for="fLang" data-i18n="form.lang">Preferred language</label>
+                  <div class="select-wrap">
+                    <select id="fLang" name="language">
+                      <option value="en">English</option>
+                      <option value="es">Español</option>
+                      <option value="nl">Nederlands</option>
+                      <option value="de">Deutsch</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="fService" data-i18n="form.service">Service required</label>
+                  <div class="select-wrap">
+                    <select id="fService" name="service">
+                      <option value="" data-i18n="form.servicePh">Please choose a service…</option>
+                      <option value="cleaning" data-i18n="svc.1t">Home Cleaning</option>
+                      <option value="maintenance" data-i18n="svc.2t">Property Maintenance</option>
+                      <option value="handyman" data-i18n="svc.3t">Handyman Services</option>
+                      <option value="holiday" data-i18n="svc.4t">Holiday Home Care</option>
+                      <option value="other" data-i18n="form.other">Something else</option>
+                    </select>
+                  </div>
+                  <span class="err" data-i18n="err.service">Please choose a service.</span>
+                </div>
+                <div class="field">
+                  <label for="fLocation" data-i18n="form.location">Property location</label>
+                  <input id="fLocation" name="location" type="text" data-i18n-ph="form.locationPh" placeholder="Town or area in Murcia" />
+                  <span class="err" data-i18n="err.location">Please tell us where the property is located.</span>
+                </div>
+                <div class="field full">
+                  <label for="fMessage" data-i18n="form.message">Tell us about your home</label>
+                  <textarea id="fMessage" name="message" data-i18n-ph="form.messagePh" placeholder="Type of property, how often you'd like help, anything else we should know…"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary submit-btn magnetic" id="submitBtn">
+                <span class="spinner" aria-hidden="true"></span>
+                <span class="btn-label" data-i18n="form.submit">Request My Quote</span>
+                <svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+              <div class="demo-note">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+                <span data-i18n="form.demo">Demonstration form — enquiries are checked in your browser only and are not sent anywhere yet. A form endpoint can be connected here when the business is ready to go live.</span>
+              </div>
+            </form>
+            <div class="form-success" id="formSuccess" role="status">
+              <div class="success-icon">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              </div>
+              <h3 data-i18n="form.successT">Thank you — your details check out.</h3>
+              <p data-i18n="form.successB">This is a demo form, so nothing has been sent. In the live version, this is where your enquiry would be confirmed and on its way to the Verde Casa team.</p>
+              <button type="button" class="btn btn-ghost" id="resetFormBtn"><span data-i18n="form.again">Send another enquiry</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- L. Footer -->
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <a class="wordmark" href="#top">Verde&nbsp;Casa<span class="dot">.</span><small>Murcia</small></a>
+            <p class="footer-desc" data-i18n="footer.desc">Reliable home services for homeowners and property owners across the Region of Murcia — cleaning, maintenance, handyman help and holiday home care, in your language.</p>
+            <div class="socials">
+              <a href="#" aria-label="Instagram (placeholder link)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01"/></svg></a>
+              <a href="#" aria-label="Facebook (placeholder link)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h-2.5A3.5 3.5 0 0 0 9 7.5V10H6.5v3H9v7h3.2v-7h2.6l.5-3h-3.1V7.8c0-.5.4-.8.9-.8H15V4Z"/></svg></a>
+              <a href="#" aria-label="WhatsApp (placeholder link)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l.9-4.2A8 8 0 1 1 20 12Z"/><path d="M9 9.5c.5 2.5 3 5 5.5 5.5l1-1.5-2.3-1-1 .7c-.8-.4-1.4-1-1.8-1.8l.7-1-1-2.3L9 9.5Z"/></svg></a>
+            </div>
+          </div>
+          <nav aria-label="Services">
+            <h4 data-i18n="footer.servicesH">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services" data-i18n="svc.1t">Home Cleaning</a></li>
+              <li><a href="#services" data-i18n="svc.2t">Property Maintenance</a></li>
+              <li><a href="#services" data-i18n="svc.3t">Handyman Services</a></li>
+              <li><a href="#services" data-i18n="svc.4t">Holiday Home Care</a></li>
+            </ul>
+          </nav>
+          <nav aria-label="Company">
+            <h4 data-i18n="footer.companyH">Explore</h4>
+            <ul class="footer-links">
+              <li><a href="#how" data-i18n="nav.how">How It Works</a></li>
+              <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+              <li><a href="#coverage" data-i18n="footer.coverage">Coverage</a></li>
+              <li><a href="#faqs" data-i18n="nav.faqs">FAQs</a></li>
+              <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h4 data-i18n="footer.contactH">Contact</h4>
+            <ul class="footer-contact">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg><span data-i18n="footer.email">Email — to be added</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg><span data-i18n="footer.phone">Phone — to be added</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.3-7-11a7 7 0 0 1 14 0c0 5.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span data-i18n="footer.region">Region of Murcia, Spain</span></li>
+            </ul>
+            <h4 style="margin-top:1.8rem" data-i18n="footer.langH">Language</h4>
+            <div class="lang-select" data-lang-select>
+              <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+                <span data-lang-current>EN</span>
+                <svg class="chev" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="lang-menu" role="listbox" aria-label="Language" style="left:0;right:auto;bottom:calc(100% + 10px);top:auto">
+                <template>
+                <button type="button" role="option" data-lang="en" aria-checked="true"><span class="code">EN</span> English</button>
+                <button type="button" role="option" data-lang="es" aria-checked="false"><span class="code">ES</span> Español</button>
+                <button type="button" role="option" data-lang="nl" aria-checked="false"><span class="code">NL</span> Nederlands</button>
+                <button type="button" role="option" data-lang="de" aria-checked="false"><span class="code">DE</span> Deutsch</button>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year">2026</span> Verde Casa. <span data-i18n="footer.rights">All rights reserved.</span></span>
+          <div class="footer-legal">
+            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+            <a href="#" data-i18n="footer.cookies">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      "use strict";
+      /* ============ Translations ============ */
+      const I18N = {
+        en: {
+          "announce": "Your home, taken care of across Murcia.",
+          "nav.services": "Services", "nav.how": "How It Works", "nav.about": "About Us", "nav.faqs": "FAQs", "nav.contact": "Contact", "nav.quote": "Request a Quote",
+          "hero.eyebrow": "Home Services · Murcia, Spain",
+          "hero.title": "Your Home.<br /><em>In Good Hands.</em>",
+          "hero.sub": "Reliable home services for homeowners and property owners across Murcia. Professional care, tailored to your needs.",
+          "hero.cta1": "Request a Free Quote", "hero.cta2": "Explore Our Services",
+          "hero.note": "Free, no-obligation quotes — in your language",
+          "hero.card1t": "Local support", "hero.card1s": "Based right here in Murcia",
+          "hero.card2t": "Care you can count on", "hero.card2s": "Considered, consistent, personal",
+          "hero.scroll": "Scroll",
+          "trust.1t": "Local service across Murcia", "trust.1s": "One regional team for your home, wherever it is in Murcia.",
+          "trust.2t": "Flexible service options", "trust.2s": "One-off visits or regular care — shaped around your home.",
+          "trust.3t": "Clear communication", "trust.3s": "Straightforward updates before, during and after every visit.",
+          "trust.4t": "Support in multiple languages", "trust.4s": "English, Spanish, Dutch/Flemish and German.",
+          "services.eyebrow": "Our Services",
+          "services.title": "Everything Your Home <em>Needs.</em>",
+          "services.intro": "From regular cleaning to looking after a holiday home while you're away — one trusted point of contact for the care of your property.",
+          "svc.1t": "Home Cleaning", "svc.1d": "Regular and one-off cleaning that keeps your home fresh, calm and guest-ready — kitchens, bathrooms, living spaces and terraces.",
+          "svc.2t": "Property Maintenance", "svc.2d": "Ongoing care for your property inside and out — garden upkeep, pool areas and routine checks that keep everything running smoothly.",
+          "svc.3t": "Handyman Services", "svc.3d": "Repairs, fittings and small jobs handled properly — the practical help that keeps a home in good order, without the hassle.",
+          "svc.4t": "Holiday Home Care", "svc.4d": "Changeovers, laundry, guest preparation and peace of mind while you're away — your second home, looked after as carefully as our own.",
+          "svc.enquire": "Enquire about this service",
+          "how.eyebrow": "How It Works",
+          "how.title": "Getting Started Is <em>Simple.</em>",
+          "how.intro": "No complicated booking systems and no obligation. Three unhurried steps between you and a well-cared-for home.",
+          "how.1t": "Tell Us What You Need", "how.1d": "Send a short enquiry using the form below — tell us about your home, where it is, and the kind of help you're looking for.",
+          "how.2t": "Discuss Your Requirements", "how.2d": "We'll talk through the details with you — in your preferred language — and answer any questions before anything is agreed.",
+          "how.3t": "Get a Tailored Service Plan", "how.3d": "Receive a clear, personalised plan and quote for your home. Only when you're happy with it does the service begin.",
+          "about.eyebrow": "About Us",
+          "about.title": "Care, Rooted <em>in Murcia.</em>",
+          "about.badgeT": "Personal, not corporate", "about.badgeS": "A small local team you can actually talk to.",
+          "about.p1": "Verde Casa exists for one simple reason: a home in Murcia deserves looking after by people who know and love the region. Whether you live here year-round or visit when you can, we take care of the practical side — so your home is always as welcoming as the day you arrived.",
+          "about.p2": "Every arrangement starts with a conversation, not a contract. We listen to what your home needs, agree a plan that fits, and keep you informed in the language you're most comfortable with.",
+          "about.pt1": "One point of contact for every service", "about.pt2": "Plans tailored to each individual property", "about.pt3": "Friendly updates after every visit",
+          "about.cta": "Start a Conversation",
+          "coverage.eyebrow": "Where We Work",
+          "coverage.title": "Here for Homes <em>Across Murcia.</em>",
+          "coverage.p1": "From city apartments to countryside villas and coastal holiday homes, we care for properties throughout the Region of Murcia — the city, the huerta, the coast and everywhere in between.",
+          "coverage.p2": "Not sure whether we can reach your property? Tell us where your home is in the enquiry form and we'll happily confirm.",
+          "coverage.tag1": "Region of Murcia", "coverage.tag2": "City & countryside homes", "coverage.tag3": "Coastal properties", "coverage.tag4": "Holiday homes",
+          "coverage.cta": "Check Availability for Your Home",
+          "coverage.cardT": "Region of Murcia, Spain", "coverage.cardS": "Serving homes across the region",
+          "testi.eyebrow": "Client Stories",
+          "testi.title": "Kind Words, <em>Coming Soon.</em>",
+          "testi.intro": "This space is reserved for genuine feedback from the homeowners we work with. Real client testimonials will be published here as they are received.",
+          "testi.ph": "Placeholder testimonial — genuine client feedback will appear here once available.",
+          "testi.tag": "Placeholder", "testi.who": "Client name to be added",
+          "faq.eyebrow": "FAQs", "faq.title": "Questions, <em>Answered.</em>",
+          "faq.1q": "What services are available?", "faq.1a": "We currently offer home cleaning, property maintenance, handyman services and holiday home care. If you need something a little different, just ask in your enquiry — arrangements can often be tailored to your home.",
+          "faq.2q": "Which areas of Murcia do you cover?", "faq.2a": "We serve homes across the Region of Murcia. Share your property's location in the enquiry form and we'll confirm availability for your area before anything is arranged.",
+          "faq.3q": "Can I request a quote before booking?", "faq.3a": "Yes — always. Every enquiry starts with a free, no-obligation quote based on your home and the services you need. Nothing is booked until you've seen the plan and are happy with it.",
+          "faq.4q": "Which languages can I communicate in?", "faq.4a": "You can speak with us in English, Spanish, Dutch/Flemish or German. Simply choose your preferred language in the enquiry form and we'll reply accordingly.",
+          "faq.5q": "How do I arrange a service?", "faq.5a": "Fill in the enquiry form below with a few details about your home. We'll get in touch to discuss your requirements, then prepare a tailored service plan and quote for you to approve.",
+          "contact.eyebrow": "Get In Touch",
+          "contact.title": "Let's Take Care of <em>Your Home.</em>",
+          "contact.intro": "Tell us a little about your home and what you need. We'll come back to you to discuss the details and prepare your free, tailored quote.",
+          "contact.cp1t": "A reply in your language", "contact.cp1s": "English, Spanish, Dutch/Flemish or German.",
+          "contact.cp2t": "No obligation, ever", "contact.cp2s": "Your quote is free and there's no pressure to proceed.",
+          "contact.cp3t": "A prompt, personal response", "contact.cp3s": "We read every enquiry ourselves and reply personally.",
+          "form.name": "Full name", "form.namePh": "Your full name",
+          "form.email": "Email address", "form.emailPh": "you@example.com",
+          "form.phone": "Phone number", "form.optional": "(optional)", "form.phonePh": "+34 600 000 000",
+          "form.lang": "Preferred language",
+          "form.service": "Service required", "form.servicePh": "Please choose a service…", "form.other": "Something else",
+          "form.location": "Property location", "form.locationPh": "Town or area in Murcia",
+          "form.message": "Tell us about your home", "form.messagePh": "Type of property, how often you'd like help, anything else we should know…",
+          "form.submit": "Request My Quote",
+          "form.demo": "Demonstration form — enquiries are checked in your browser only and are not sent anywhere yet. A form endpoint can be connected here when the business is ready to go live.",
+          "form.successT": "Thank you — your details check out.",
+          "form.successB": "This is a demo form, so nothing has been sent. In the live version, this is where your enquiry would be confirmed and on its way to the Verde Casa team.",
+          "form.again": "Send another enquiry",
+          "err.name": "Please enter your full name.",
+          "err.email": "Please enter a valid email address.",
+          "err.phone": "Please enter a valid phone number, or leave this field empty.",
+          "err.service": "Please choose a service.",
+          "err.location": "Please tell us where the property is located.",
+          "footer.desc": "Reliable home services for homeowners and property owners across the Region of Murcia — cleaning, maintenance, handyman help and holiday home care, in your language.",
+          "footer.servicesH": "Services", "footer.companyH": "Explore", "footer.coverage": "Coverage",
+          "footer.contactH": "Contact", "footer.email": "Email — to be added", "footer.phone": "Phone — to be added", "footer.region": "Region of Murcia, Spain",
+          "footer.langH": "Language", "footer.rights": "All rights reserved.", "footer.privacy": "Privacy Policy", "footer.cookies": "Cookie Policy",
+          "cursor.view": "View service"
+        },
+        es: {
+          "announce": "Tu hogar, bien cuidado en toda Murcia.",
+          "nav.services": "Servicios", "nav.how": "Cómo funciona", "nav.about": "Nosotros", "nav.faqs": "Preguntas frecuentes", "nav.contact": "Contacto", "nav.quote": "Pide tu presupuesto",
+          "hero.eyebrow": "Servicios para el hogar · Murcia, España",
+          "hero.title": "Tu hogar.<br /><em>En buenas manos.</em>",
+          "hero.sub": "Servicios domésticos fiables para propietarios en toda Murcia. Un cuidado profesional, adaptado a tus necesidades.",
+          "hero.cta1": "Pide un presupuesto gratuito", "hero.cta2": "Descubre nuestros servicios",
+          "hero.note": "Presupuestos gratuitos y sin compromiso — en tu idioma",
+          "hero.card1t": "Apoyo local", "hero.card1s": "Con base aquí mismo, en Murcia",
+          "hero.card2t": "Un cuidado en el que confiar", "hero.card2s": "Atento, constante y personal",
+          "hero.scroll": "Desliza",
+          "trust.1t": "Servicio local en toda Murcia", "trust.1s": "Un solo equipo regional para tu hogar, esté donde esté en Murcia.",
+          "trust.2t": "Opciones de servicio flexibles", "trust.2s": "Visitas puntuales o cuidado regular — adaptado a tu hogar.",
+          "trust.3t": "Comunicación clara", "trust.3s": "Información directa antes, durante y después de cada visita.",
+          "trust.4t": "Atención en varios idiomas", "trust.4s": "Inglés, español, neerlandés/flamenco y alemán.",
+          "services.eyebrow": "Nuestros servicios",
+          "services.title": "Todo lo que tu hogar <em>necesita.</em>",
+          "services.intro": "Desde la limpieza regular hasta el cuidado de tu casa vacacional mientras estás fuera — un único contacto de confianza para tu propiedad.",
+          "svc.1t": "Limpieza del hogar", "svc.1d": "Limpieza regular o puntual para que tu hogar se mantenga fresco, tranquilo y listo para recibir visitas — cocinas, baños, espacios de vida y terrazas.",
+          "svc.2t": "Mantenimiento de propiedades", "svc.2d": "Cuidado continuo de tu propiedad por dentro y por fuera: jardín, zonas de piscina y revisiones periódicas para que todo funcione bien.",
+          "svc.3t": "Servicios de manitas", "svc.3d": "Reparaciones, montajes y pequeños trabajos hechos como es debido — la ayuda práctica que mantiene un hogar en orden, sin complicaciones.",
+          "svc.4t": "Cuidado de casas vacacionales", "svc.4d": "Cambios de huéspedes, lavandería, preparación de la casa y tranquilidad mientras estás fuera — tu segunda casa, cuidada como la nuestra.",
+          "svc.enquire": "Consultar este servicio",
+          "how.eyebrow": "Cómo funciona",
+          "how.title": "Empezar es <em>muy sencillo.</em>",
+          "how.intro": "Sin sistemas de reserva complicados y sin compromiso. Tres pasos tranquilos entre tú y un hogar bien cuidado.",
+          "how.1t": "Cuéntanos qué necesitas", "how.1d": "Envíanos una breve consulta con el formulario — cuéntanos cómo es tu hogar, dónde está y qué tipo de ayuda buscas.",
+          "how.2t": "Hablamos de tus requisitos", "how.2d": "Repasaremos los detalles contigo — en tu idioma preferido — y resolveremos cualquier duda antes de acordar nada.",
+          "how.3t": "Recibe un plan a tu medida", "how.3d": "Recibirás un plan claro y personalizado con su presupuesto para tu hogar. El servicio solo empieza cuando estés conforme.",
+          "about.eyebrow": "Nosotros",
+          "about.title": "Cuidado con raíces <em>en Murcia.</em>",
+          "about.badgeT": "Personal, no corporativo", "about.badgeS": "Un equipo local pequeño con el que sí puedes hablar.",
+          "about.p1": "Verde Casa existe por una razón muy simple: un hogar en Murcia merece ser cuidado por personas que conocen y quieren la región. Vivas aquí todo el año o vengas cuando puedas, nosotros nos ocupamos de la parte práctica — para que tu casa esté siempre tan acogedora como el día que llegaste.",
+          "about.p2": "Todo acuerdo empieza con una conversación, no con un contrato. Escuchamos lo que tu hogar necesita, acordamos un plan a su medida y te mantenemos informado en el idioma en el que te sientas más cómodo.",
+          "about.pt1": "Un único contacto para todos los servicios", "about.pt2": "Planes adaptados a cada propiedad", "about.pt3": "Aviso amable después de cada visita",
+          "about.cta": "Iniciar una conversación",
+          "coverage.eyebrow": "Dónde trabajamos",
+          "coverage.title": "Aquí para los hogares <em>de toda Murcia.</em>",
+          "coverage.p1": "Desde pisos en la ciudad hasta villas en el campo y casas vacacionales en la costa, cuidamos propiedades en toda la Región de Murcia: la ciudad, la huerta, la costa y todo lo que hay entre medias.",
+          "coverage.p2": "¿No sabes si llegamos a tu propiedad? Cuéntanos dónde está tu hogar en el formulario y te lo confirmamos encantados.",
+          "coverage.tag1": "Región de Murcia", "coverage.tag2": "Casas en ciudad y campo", "coverage.tag3": "Propiedades en la costa", "coverage.tag4": "Casas vacacionales",
+          "coverage.cta": "Consulta la disponibilidad para tu hogar",
+          "coverage.cardT": "Región de Murcia, España", "coverage.cardS": "Atendemos hogares en toda la región",
+          "testi.eyebrow": "Historias de clientes",
+          "testi.title": "Palabras amables, <em>muy pronto.</em>",
+          "testi.intro": "Este espacio está reservado para las opiniones reales de los propietarios con los que trabajamos. Los testimonios de clientes se publicarán aquí a medida que los recibamos.",
+          "testi.ph": "Testimonio de marcador — aquí aparecerán las opiniones reales de los clientes cuando estén disponibles.",
+          "testi.tag": "Marcador", "testi.who": "Nombre del cliente por añadir",
+          "faq.eyebrow": "Preguntas frecuentes", "faq.title": "Preguntas, <em>respondidas.</em>",
+          "faq.1q": "¿Qué servicios están disponibles?", "faq.1a": "Actualmente ofrecemos limpieza del hogar, mantenimiento de propiedades, servicios de manitas y cuidado de casas vacacionales. Si necesitas algo un poco distinto, pregúntanos en tu consulta: a menudo podemos adaptar el servicio a tu hogar.",
+          "faq.2q": "¿Qué zonas de Murcia cubrís?", "faq.2a": "Atendemos hogares en toda la Región de Murcia. Indica la ubicación de tu propiedad en el formulario y confirmaremos la disponibilidad en tu zona antes de organizar nada.",
+          "faq.3q": "¿Puedo pedir un presupuesto antes de reservar?", "faq.3a": "Sí — siempre. Toda consulta empieza con un presupuesto gratuito y sin compromiso, según tu hogar y los servicios que necesitas. Nada se reserva hasta que veas el plan y estés conforme.",
+          "faq.4q": "¿En qué idiomas puedo comunicarme?", "faq.4a": "Puedes hablar con nosotros en inglés, español, neerlandés/flamenco o alemán. Solo tienes que elegir tu idioma preferido en el formulario y te responderemos en él.",
+          "faq.5q": "¿Cómo contrato un servicio?", "faq.5a": "Rellena el formulario siguiente con algunos datos sobre tu hogar. Nos pondremos en contacto para hablar de tus requisitos y prepararemos un plan de servicio a medida con su presupuesto para tu aprobación.",
+          "contact.eyebrow": "Contacta con nosotros",
+          "contact.title": "Cuidemos <em>de tu hogar.</em>",
+          "contact.intro": "Cuéntanos un poco sobre tu hogar y lo que necesitas. Te responderemos para hablar de los detalles y preparar tu presupuesto gratuito y a medida.",
+          "contact.cp1t": "Respuesta en tu idioma", "contact.cp1s": "Inglés, español, neerlandés/flamenco o alemán.",
+          "contact.cp2t": "Sin compromiso, nunca", "contact.cp2s": "Tu presupuesto es gratuito y sin ninguna presión para continuar.",
+          "contact.cp3t": "Respuesta rápida y personal", "contact.cp3s": "Leemos cada consulta personalmente y respondemos del mismo modo.",
+          "form.name": "Nombre completo", "form.namePh": "Tu nombre completo",
+          "form.email": "Correo electrónico", "form.emailPh": "tu@ejemplo.com",
+          "form.phone": "Teléfono", "form.optional": "(opcional)", "form.phonePh": "+34 600 000 000",
+          "form.lang": "Idioma preferido",
+          "form.service": "Servicio que necesitas", "form.servicePh": "Elige un servicio…", "form.other": "Otra cosa",
+          "form.location": "Ubicación de la propiedad", "form.locationPh": "Pueblo o zona de Murcia",
+          "form.message": "Cuéntanos sobre tu hogar", "form.messagePh": "Tipo de propiedad, con qué frecuencia quieres ayuda, cualquier otra cosa que debamos saber…",
+          "form.submit": "Solicitar mi presupuesto",
+          "form.demo": "Formulario de demostración — las consultas solo se comprueban en tu navegador y aún no se envían a ningún sitio. Cuando el negocio esté listo, aquí se podrá conectar un sistema de envío real.",
+          "form.successT": "Gracias — tus datos son correctos.",
+          "form.successB": "Esto es un formulario de demostración, así que no se ha enviado nada. En la versión real, aquí se confirmaría tu consulta y ya estaría de camino al equipo de Verde Casa.",
+          "form.again": "Enviar otra consulta",
+          "err.name": "Introduce tu nombre completo, por favor.",
+          "err.email": "Introduce un correo electrónico válido, por favor.",
+          "err.phone": "Introduce un teléfono válido o deja este campo vacío.",
+          "err.service": "Elige un servicio, por favor.",
+          "err.location": "Cuéntanos dónde está la propiedad, por favor.",
+          "footer.desc": "Servicios domésticos fiables para propietarios en toda la Región de Murcia: limpieza, mantenimiento, manitas y cuidado de casas vacacionales, en tu idioma.",
+          "footer.servicesH": "Servicios", "footer.companyH": "Explora", "footer.coverage": "Cobertura",
+          "footer.contactH": "Contacto", "footer.email": "Correo — por añadir", "footer.phone": "Teléfono — por añadir", "footer.region": "Región de Murcia, España",
+          "footer.langH": "Idioma", "footer.rights": "Todos los derechos reservados.", "footer.privacy": "Política de privacidad", "footer.cookies": "Política de cookies",
+          "cursor.view": "Ver servicio"
+        },
+        nl: {
+          "announce": "Uw woning, goed verzorgd in heel Murcia.",
+          "nav.services": "Diensten", "nav.how": "Hoe het werkt", "nav.about": "Over ons", "nav.faqs": "Veelgestelde vragen", "nav.contact": "Contact", "nav.quote": "Vraag een offerte aan",
+          "hero.eyebrow": "Woningdiensten · Murcia, Spanje",
+          "hero.title": "Uw woning.<br /><em>In goede handen.</em>",
+          "hero.sub": "Betrouwbare woningdiensten voor huiseigenaren en vastgoedeigenaren in heel Murcia. Professionele zorg, afgestemd op uw wensen.",
+          "hero.cta1": "Vraag een gratis offerte aan", "hero.cta2": "Bekijk onze diensten",
+          "hero.note": "Gratis en vrijblijvende offertes — in uw taal",
+          "hero.card1t": "Lokale ondersteuning", "hero.card1s": "Gevestigd hier in Murcia",
+          "hero.card2t": "Zorg waar u op kunt rekenen", "hero.card2s": "Zorgvuldig, consequent, persoonlijk",
+          "hero.scroll": "Scroll",
+          "trust.1t": "Lokale service in heel Murcia", "trust.1s": "Eén regionaal team voor uw woning, waar die in Murcia ook staat.",
+          "trust.2t": "Flexibele servicemogelijkheden", "trust.2s": "Eenmalige bezoeken of regelmatige zorg — afgestemd op uw woning.",
+          "trust.3t": "Heldere communicatie", "trust.3s": "Duidelijke updates voor, tijdens en na elk bezoek.",
+          "trust.4t": "Ondersteuning in meerdere talen", "trust.4s": "Engels, Spaans, Nederlands/Vlaams en Duits.",
+          "services.eyebrow": "Onze diensten",
+          "services.title": "Alles wat uw woning <em>nodig heeft.</em>",
+          "services.intro": "Van regelmatige schoonmaak tot zorg voor uw vakantiewoning terwijl u weg bent — één vertrouwd aanspreekpunt voor uw eigendom.",
+          "svc.1t": "Woningreiniging", "svc.1d": "Regelmatige en eenmalige schoonmaak die uw woning fris, rustig en gasten klaar houdt — keukens, badkamers, leefruimtes en terrassen.",
+          "svc.2t": "Vastgoedonderhoud", "svc.2d": "Doorlopende zorg voor uw eigendom, binnen en buiten — tuinonderhoud, zwembadomgeving en routinecontroles zodat alles soepel blijft werken.",
+          "svc.3t": "Klusjesdienst", "svc.3d": "Reparaties, montage en kleine klussen, netjes uitgevoerd — de praktische hulp die een woning in goede staat houdt, zonder gedoe.",
+          "svc.4t": "Zorg voor vakantiewoningen", "svc.4d": "Wisselingen, wasgoed, voorbereiding voor gasten en gemoedsrust terwijl u weg bent — uw tweede woning, verzorgd als de onze.",
+          "svc.enquire": "Informeer naar deze dienst",
+          "how.eyebrow": "Hoe het werkt",
+          "how.title": "Aan de slag gaan is <em>eenvoudig.</em>",
+          "how.intro": "Geen ingewikkelde boekingssystemen en geen verplichtingen. Drie rustige stappen tussen u en een goed verzorgde woning.",
+          "how.1t": "Vertel ons wat u nodig heeft", "how.1d": "Stuur een korte aanvraag via het formulier hieronder — vertel ons over uw woning, waar die staat en welke hulp u zoekt.",
+          "how.2t": "Bespreek uw wensen", "how.2d": "We bespreken de details met u — in uw voorkeurstaal — en beantwoorden al uw vragen voordat er iets wordt afgesproken.",
+          "how.3t": "Ontvang een serviceplan op maat", "how.3d": "Ontvang een helder, persoonlijk plan met offerte voor uw woning. Pas wanneer u tevreden bent, gaat de service van start.",
+          "about.eyebrow": "Over ons",
+          "about.title": "Zorg, geworteld <em>in Murcia.</em>",
+          "about.badgeT": "Persoonlijk, niet zakelijk afstandelijk", "about.badgeS": "Een klein lokaal team dat u echt kunt spreken.",
+          "about.p1": "Verde Casa bestaat om één eenvoudige reden: een woning in Murcia verdient verzorging door mensen die de regio kennen en liefhebben. Of u hier het hele jaar woont of langskomt wanneer het kan, wij regelen de praktische kant — zodat uw woning altijd zo uitnodigend is als op de dag dat u aankwam.",
+          "about.p2": "Elke afspraak begint met een gesprek, niet met een contract. We luisteren naar wat uw woning nodig heeft, spreken een passend plan af en houden u op de hoogte in de taal waarin u zich het prettigst voelt.",
+          "about.pt1": "Eén aanspreekpunt voor elke dienst", "about.pt2": "Plannen op maat voor elk eigendom", "about.pt3": "Vriendelijke updates na elk bezoek",
+          "about.cta": "Begin een gesprek",
+          "coverage.eyebrow": "Waar we werken",
+          "coverage.title": "Er voor woningen <em>in heel Murcia.</em>",
+          "coverage.p1": "Van stadsappartementen tot villa's op het platteland en vakantiewoningen aan de kust: wij verzorgen eigendommen in de hele regio Murcia — de stad, de huerta, de kust en alles daartussenin.",
+          "coverage.p2": "Niet zeker of we uw eigendom kunnen bereiken? Vertel ons in het aanvraagformulier waar uw woning staat en we bevestigen het graag.",
+          "coverage.tag1": "Regio Murcia", "coverage.tag2": "Woningen in stad en platteland", "coverage.tag3": "Eigendommen aan de kust", "coverage.tag4": "Vakantiewoningen",
+          "coverage.cta": "Controleer de beschikbaarheid voor uw woning",
+          "coverage.cardT": "Regio Murcia, Spanje", "coverage.cardS": "Wij bedienen woningen in de hele regio",
+          "testi.eyebrow": "Klantverhalen",
+          "testi.title": "Mooie woorden, <em>binnenkort.</em>",
+          "testi.intro": "Deze ruimte is gereserveerd voor echte feedback van de huiseigenaren met wie we werken. Echte klantbeoordelingen worden hier gepubliceerd zodra ze binnenkomen.",
+          "testi.ph": "Tijdelijke beoordeling — echte feedback van klanten verschijnt hier zodra die beschikbaar is.",
+          "testi.tag": "Tijdelijk", "testi.who": "Klantnaam volgt nog",
+          "faq.eyebrow": "Veelgestelde vragen", "faq.title": "Vragen, <em>beantwoord.</em>",
+          "faq.1q": "Welke diensten zijn er beschikbaar?", "faq.1a": "Wij bieden momenteel woningreiniging, vastgoedonderhoud, een klusjesdienst en zorg voor vakantiewoningen. Heeft u iets anders nodig? Vraag het in uw aanvraag — vaak kunnen we de service op uw woning afstemmen.",
+          "faq.2q": "Welke delen van Murcia dekken jullie?", "faq.2a": "Wij bedienen woningen in de hele regio Murcia. Vermeld de locatie van uw eigendom in het aanvraagformulier en we bevestigen de beschikbaarheid voor uw gebied voordat er iets wordt geregeld.",
+          "faq.3q": "Kan ik een offerte aanvragen vóór ik boek?", "faq.3a": "Ja — altijd. Elke aanvraag begint met een gratis en vrijblijvende offerte op basis van uw woning en de diensten die u nodig heeft. Er wordt niets geboekt totdat u het plan heeft gezien en ermee akkoord gaat.",
+          "faq.4q": "In welke talen kan ik communiceren?", "faq.4a": "U kunt met ons spreken in het Engels, Spaans, Nederlands/Vlaams of Duits. Kies eenvoudig uw voorkeurstaal in het aanvraagformulier en wij reageren in die taal.",
+          "faq.5q": "Hoe regel ik een dienst?", "faq.5a": "Vul hieronder het aanvraagformulier in met enkele gegevens over uw woning. We nemen contact met u op om uw wensen te bespreken en stellen daarna een serviceplan op maat met offerte samen, ter goedkeuring aan u.",
+          "contact.eyebrow": "Neem contact op",
+          "contact.title": "Laten we voor <em>uw woning zorgen.</em>",
+          "contact.intro": "Vertel ons iets over uw woning en wat u nodig heeft. We nemen contact met u op om de details te bespreken en uw gratis offerte op maat voor te bereiden.",
+          "contact.cp1t": "Antwoord in uw taal", "contact.cp1s": "Engels, Spaans, Nederlands/Vlaams of Duits.",
+          "contact.cp2t": "Altijd vrijblijvend", "contact.cp2s": "Uw offerte is gratis en er is geen enkele druk om door te gaan.",
+          "contact.cp3t": "Een snelle, persoonlijke reactie", "contact.cp3s": "We lezen elke aanvraag zelf en reageren persoonlijk.",
+          "form.name": "Volledige naam", "form.namePh": "Uw volledige naam",
+          "form.email": "E-mailadres", "form.emailPh": "u@voorbeeld.com",
+          "form.phone": "Telefoonnummer", "form.optional": "(optioneel)", "form.phonePh": "+34 600 000 000",
+          "form.lang": "Voorkeurstaal",
+          "form.service": "Gewenste dienst", "form.servicePh": "Kies een dienst…", "form.other": "Iets anders",
+          "form.location": "Locatie van het eigendom", "form.locationPh": "Plaats of gebied in Murcia",
+          "form.message": "Vertel ons over uw woning", "form.messagePh": "Soort eigendom, hoe vaak u hulp wenst, alles wat we verder moeten weten…",
+          "form.submit": "Offerte aanvragen",
+          "form.demo": "Demonstratieformulier — aanvragen worden alleen in uw browser gecontroleerd en worden nog nergens heen verzonden. Zodra het bedrijf live gaat, kan hier een echt verzendpunt worden gekoppeld.",
+          "form.successT": "Bedankt — uw gegevens kloppen.",
+          "form.successB": "Dit is een demoformulier, dus er is niets verzonden. In de live versie zou uw aanvraag hier worden bevestigd en onderweg zijn naar het team van Verde Casa.",
+          "form.again": "Nog een aanvraag sturen",
+          "err.name": "Vul uw volledige naam in.",
+          "err.email": "Vul een geldig e-mailadres in.",
+          "err.phone": "Vul een geldig telefoonnummer in, of laat dit veld leeg.",
+          "err.service": "Kies een dienst.",
+          "err.location": "Vertel ons waar het eigendom zich bevindt.",
+          "footer.desc": "Betrouwbare woningdiensten voor huiseigenaren en vastgoedeigenaren in de hele regio Murcia — schoonmaak, onderhoud, klusjesdienst en zorg voor vakantiewoningen, in uw taal.",
+          "footer.servicesH": "Diensten", "footer.companyH": "Ontdek", "footer.coverage": "Dekking",
+          "footer.contactH": "Contact", "footer.email": "E-mail — volgt nog", "footer.phone": "Telefoon — volgt nog", "footer.region": "Regio Murcia, Spanje",
+          "footer.langH": "Taal", "footer.rights": "Alle rechten voorbehouden.", "footer.privacy": "Privacybeleid", "footer.cookies": "Cookiebeleid",
+          "cursor.view": "Bekijk dienst"
+        },
+        de: {
+          "announce": "Ihr Zuhause, in ganz Murcia gut betreut.",
+          "nav.services": "Leistungen", "nav.how": "So funktioniert's", "nav.about": "Über uns", "nav.faqs": "FAQ", "nav.contact": "Kontakt", "nav.quote": "Angebot anfordern",
+          "hero.eyebrow": "Hausdienstleistungen · Murcia, Spanien",
+          "hero.title": "Ihr Zuhause.<br /><em>In guten Händen.</em>",
+          "hero.sub": "Zuverlässige Hausdienstleistungen für Haus- und Immobilienbesitzer in ganz Murcia. Professionelle Betreuung, auf Ihre Bedürfnisse zugeschnitten.",
+          "hero.cta1": "Kostenloses Angebot anfordern", "hero.cta2": "Unsere Leistungen entdecken",
+          "hero.note": "Kostenlose, unverbindliche Angebote — in Ihrer Sprache",
+          "hero.card1t": "Lokale Unterstützung", "hero.card1s": "Direkt hier in Murcia ansässig",
+          "hero.card2t": "Betreuung, auf die Verlass ist", "hero.card2s": "Sorgfältig, zuverlässig, persönlich",
+          "hero.scroll": "Scrollen",
+          "trust.1t": "Lokaler Service in ganz Murcia", "trust.1s": "Ein regionales Team für Ihr Zuhause — wo immer es in Murcia liegt.",
+          "trust.2t": "Flexible Serviceoptionen", "trust.2s": "Einmalige Einsätze oder regelmäßige Betreuung — rund um Ihr Zuhause geplant.",
+          "trust.3t": "Klare Kommunikation", "trust.3s": "Verständliche Updates vor, während und nach jedem Einsatz.",
+          "trust.4t": "Unterstützung in mehreren Sprachen", "trust.4s": "Englisch, Spanisch, Niederländisch/Flämisch und Deutsch.",
+          "services.eyebrow": "Unsere Leistungen",
+          "services.title": "Alles, was Ihr Zuhause <em>braucht.</em>",
+          "services.intro": "Von der regelmäßigen Reinigung bis zur Betreuung Ihres Ferienhauses, während Sie fort sind — ein vertrauensvoller Ansprechpartner für Ihre Immobilie.",
+          "svc.1t": "Hausreinigung", "svc.1d": "Regelmäßige und einmalige Reinigung, die Ihr Zuhause frisch, ruhig und gästebereit hält — Küchen, Bäder, Wohnräume und Terrassen.",
+          "svc.2t": "Immobilienpflege", "svc.2d": "Laufende Pflege Ihrer Immobilie innen und außen — Gartenpflege, Poolbereiche und Routinekontrollen, damit alles reibungslos läuft.",
+          "svc.3t": "Handwerkerservice", "svc.3d": "Reparaturen, Montagen und kleine Arbeiten, ordentlich erledigt — die praktische Hilfe, die ein Zuhause in Schuss hält, ganz ohne Aufwand.",
+          "svc.4t": "Betreuung von Ferienhäusern", "svc.4d": "Gästewechsel, Wäsche, Vorbereitung und ein ruhiges Gewissen, während Sie fort sind — Ihr zweites Zuhause, so sorgfältig betreut wie unser eigenes.",
+          "svc.enquire": "Zu dieser Leistung anfragen",
+          "how.eyebrow": "So funktioniert's",
+          "how.title": "Der Einstieg ist <em>ganz einfach.</em>",
+          "how.intro": "Keine komplizierten Buchungssysteme und keine Verpflichtungen. Drei entspannte Schritte zwischen Ihnen und einem gut betreuten Zuhause.",
+          "how.1t": "Sagen Sie uns, was Sie brauchen", "how.1d": "Senden Sie eine kurze Anfrage über das Formular unten — erzählen Sie uns von Ihrem Zuhause, wo es liegt und welche Hilfe Sie suchen.",
+          "how.2t": "Besprechen Sie Ihre Wünsche", "how.2d": "Wir gehen die Details mit Ihnen durch — in Ihrer bevorzugten Sprache — und beantworten alle Fragen, bevor etwas vereinbart wird.",
+          "how.3t": "Erhalten Sie einen maßgeschneiderten Plan", "how.3d": "Sie erhalten einen klaren, persönlichen Plan samt Angebot für Ihr Zuhause. Erst wenn Sie zufrieden sind, beginnt der Service.",
+          "about.eyebrow": "Über uns",
+          "about.title": "Betreuung mit Wurzeln <em>in Murcia.</em>",
+          "about.badgeT": "Persönlich statt konzernartig", "about.badgeS": "Ein kleines lokales Team, mit dem Sie wirklich sprechen können.",
+          "about.p1": "Verde Casa gibt es aus einem einfachen Grund: Ein Zuhause in Murcia verdient Betreuung von Menschen, die die Region kennen und lieben. Ob Sie das ganze Jahr hier leben oder kommen, wann immer es geht — wir kümmern uns um die praktische Seite, damit Ihr Zuhause immer so einladend ist wie am Tag Ihrer Ankunft.",
+          "about.p2": "Jede Vereinbarung beginnt mit einem Gespräch, nicht mit einem Vertrag. Wir hören zu, was Ihr Zuhause braucht, vereinbaren einen passenden Plan und halten Sie in der Sprache auf dem Laufenden, in der Sie sich am wohlsten fühlen.",
+          "about.pt1": "Ein Ansprechpartner für alle Leistungen", "about.pt2": "Pläne, die auf jede Immobilie zugeschnitten sind", "about.pt3": "Freundliche Updates nach jedem Einsatz",
+          "about.cta": "Ein Gespräch beginnen",
+          "coverage.eyebrow": "Wo wir arbeiten",
+          "coverage.title": "Für Zuhause <em>in ganz Murcia da.</em>",
+          "coverage.p1": "Von Stadtwohnungen über Villen auf dem Land bis zu Ferienhäusern an der Küste betreuen wir Immobilien in der gesamten Region Murcia — in der Stadt, in der Huerta, an der Küste und überall dazwischen.",
+          "coverage.p2": "Sie sind nicht sicher, ob wir Ihre Immobilie erreichen? Teilen Sie uns im Anfrageformular mit, wo Ihr Zuhause liegt — wir bestätigen es Ihnen gern.",
+          "coverage.tag1": "Region Murcia", "coverage.tag2": "Häuser in Stadt & Land", "coverage.tag3": "Immobilien an der Küste", "coverage.tag4": "Ferienhäuser",
+          "coverage.cta": "Verfügbarkeit für Ihr Zuhause prüfen",
+          "coverage.cardT": "Region Murcia, Spanien", "coverage.cardS": "Wir betreuen Häuser in der ganzen Region",
+          "testi.eyebrow": "Kundenstimmen",
+          "testi.title": "Freundliche Worte, <em>demnächst.</em>",
+          "testi.intro": "Dieser Bereich ist für echtes Feedback der Hausbesitzer reserviert, mit denen wir arbeiten. Echte Kundenstimmen werden hier veröffentlicht, sobald sie eintreffen.",
+          "testi.ph": "Platzhalter-Bewertung — echtes Kundenfeedback erscheint hier, sobald es verfügbar ist.",
+          "testi.tag": "Platzhalter", "testi.who": "Kundenname folgt",
+          "faq.eyebrow": "Häufige Fragen", "faq.title": "Fragen, <em>beantwortet.</em>",
+          "faq.1q": "Welche Leistungen sind verfügbar?", "faq.1a": "Wir bieten derzeit Hausreinigung, Immobilienpflege, Handwerkerservice und die Betreuung von Ferienhäusern an. Wenn Sie etwas anderes benötigen, fragen Sie einfach in Ihrer Anfrage nach — oft lässt sich der Service auf Ihr Zuhause zuschneiden.",
+          "faq.2q": "Welche Gebiete in Murcia decken Sie ab?", "faq.2a": "Wir betreuen Häuser in der gesamten Region Murcia. Teilen Sie uns den Standort Ihrer Immobilie im Anfrageformular mit, und wir bestätigen die Verfügbarkeit für Ihr Gebiet, bevor irgendetwas vereinbart wird.",
+          "faq.3q": "Kann ich vor der Buchung ein Angebot anfordern?", "faq.3a": "Ja — immer. Jede Anfrage beginnt mit einem kostenlosen, unverbindlichen Angebot, das auf Ihr Zuhause und die gewünschten Leistungen abgestimmt ist. Gebucht wird erst, wenn Sie den Plan gesehen haben und zufrieden sind.",
+          "faq.4q": "In welchen Sprachen kann ich kommunizieren?", "faq.4a": "Sie können mit uns auf Englisch, Spanisch, Niederländisch/Flämisch oder Deutsch sprechen. Wählen Sie einfach Ihre bevorzugte Sprache im Anfrageformular, und wir antworten entsprechend.",
+          "faq.5q": "Wie vereinbare ich eine Leistung?", "faq.5a": "Füllen Sie das Anfrageformular unten mit ein paar Angaben zu Ihrem Zuhause aus. Wir melden uns bei Ihnen, besprechen Ihre Wünsche und erstellen dann einen maßgeschneiderten Serviceplan mit Angebot zur Freigabe durch Sie.",
+          "contact.eyebrow": "Kontakt aufnehmen",
+          "contact.title": "Kümmern wir uns um <em>Ihr Zuhause.</em>",
+          "contact.intro": "Erzählen Sie uns ein wenig über Ihr Zuhause und was Sie brauchen. Wir melden uns, besprechen die Details und erstellen Ihr kostenloses, maßgeschneidertes Angebot.",
+          "contact.cp1t": "Antwort in Ihrer Sprache", "contact.cp1s": "Englisch, Spanisch, Niederländisch/Flämisch oder Deutsch.",
+          "contact.cp2t": "Immer unverbindlich", "contact.cp2s": "Ihr Angebot ist kostenlos, und es gibt keinerlei Druck, weiterzumachen.",
+          "contact.cp3t": "Schnelle, persönliche Antwort", "contact.cp3s": "Wir lesen jede Anfrage selbst und antworten persönlich.",
+          "form.name": "Vollständiger Name", "form.namePh": "Ihr vollständiger Name",
+          "form.email": "E-Mail-Adresse", "form.emailPh": "sie@beispiel.com",
+          "form.phone": "Telefonnummer", "form.optional": "(optional)", "form.phonePh": "+34 600 000 000",
+          "form.lang": "Bevorzugte Sprache",
+          "form.service": "Gewünschte Leistung", "form.servicePh": "Bitte wählen Sie eine Leistung…", "form.other": "Etwas anderes",
+          "form.location": "Standort der Immobilie", "form.locationPh": "Ort oder Gebiet in Murcia",
+          "form.message": "Erzählen Sie uns von Ihrem Zuhause", "form.messagePh": "Art der Immobilie, wie oft Sie Hilfe wünschen, alles Weitere, das wir wissen sollten…",
+          "form.submit": "Mein Angebot anfordern",
+          "form.demo": "Demonstrationsformular — Anfragen werden nur in Ihrem Browser geprüft und noch nirgendwohin gesendet. Sobald das Unternehmen live geht, kann hier ein echtes Übermittlungssystem angebunden werden.",
+          "form.successT": "Vielen Dank — Ihre Angaben sind in Ordnung.",
+          "form.successB": "Dies ist ein Demoformular, es wurde also nichts gesendet. In der Live-Version würde Ihre Anfrage hier bestätigt und wäre auf dem Weg zum Verde-Casa-Team.",
+          "form.again": "Eine weitere Anfrage senden",
+          "err.name": "Bitte geben Sie Ihren vollständigen Namen ein.",
+          "err.email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+          "err.phone": "Bitte geben Sie eine gültige Telefonnummer ein oder lassen Sie dieses Feld leer.",
+          "err.service": "Bitte wählen Sie eine Leistung.",
+          "err.location": "Bitte teilen Sie uns mit, wo sich die Immobilie befindet.",
+          "footer.desc": "Zuverlässige Hausdienstleistungen für Haus- und Immobilienbesitzer in der gesamten Region Murcia — Reinigung, Pflege, Handwerkerservice und Betreuung von Ferienhäusern, in Ihrer Sprache.",
+          "footer.servicesH": "Leistungen", "footer.companyH": "Entdecken", "footer.coverage": "Abdeckung",
+          "footer.contactH": "Kontakt", "footer.email": "E-Mail — folgt", "footer.phone": "Telefon — folgt", "footer.region": "Region Murcia, Spanien",
+          "footer.langH": "Sprache", "footer.rights": "Alle Rechte vorbehalten.", "footer.privacy": "Datenschutz", "footer.cookies": "Cookie-Richtlinie",
+          "cursor.view": "Leistung ansehen"
+        }
+      };
+
+      /* ============ Language switching ============ */
+      let currentLang = "en";
+      function setLang(lang) {
+        if (!I18N[lang]) lang = "en";
+        currentLang = lang;
+        const dict = I18N[lang];
+        document.documentElement.lang = lang;
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          const key = el.getAttribute("data-i18n");
+          if (dict[key] !== undefined) el.textContent = dict[key];
+        });
+        document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+          const key = el.getAttribute("data-i18n-html");
+          if (dict[key] !== undefined) el.innerHTML = dict[key];
+        });
+        document.querySelectorAll("[data-i18n-ph]").forEach(function (el) {
+          const key = el.getAttribute("data-i18n-ph");
+          if (dict[key] !== undefined) el.setAttribute("placeholder", dict[key]);
+        });
+        document.querySelectorAll("[data-lang-current]").forEach(function (el) {
+          el.textContent = lang.toUpperCase();
+        });
+        document.querySelectorAll("[data-lang-select]").forEach(function (wrap) {
+          wrap.querySelectorAll("[data-lang]").forEach(function (btn) {
+            btn.setAttribute("aria-checked", btn.getAttribute("data-lang") === lang ? "true" : "false");
+          });
+        });
+        const langField = document.getElementById("fLang");
+        if (langField) langField.value = lang;
+      }
+
+      function populateMenu(wrap) {
+        if (wrap.dataset.populated) return;
+        wrap.dataset.populated = "1";
+        const menu = wrap.querySelector(".lang-menu");
+        const tpl = menu.querySelector("template");
+        if (tpl) menu.appendChild(tpl.content.cloneNode(true));
+        menu.querySelectorAll("[data-lang]").forEach(function (opt) {
+          opt.setAttribute("aria-checked", opt.getAttribute("data-lang") === currentLang ? "true" : "false");
+          opt.addEventListener("click", function () {
+            setLang(opt.getAttribute("data-lang"));
+            wrap.classList.remove("open");
+            wrap.querySelector(".lang-btn").setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+      document.querySelectorAll("[data-lang-select]").forEach(function (wrap) {
+        const btn = wrap.querySelector(".lang-btn");
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          populateMenu(wrap);
+          const wasOpen = wrap.classList.contains("open");
+          document.querySelectorAll("[data-lang-select].open").forEach(function (w) {
+            w.classList.remove("open");
+            w.querySelector(".lang-btn").setAttribute("aria-expanded", "false");
+          });
+          if (!wasOpen) {
+            wrap.classList.add("open");
+            btn.setAttribute("aria-expanded", "true");
+          }
+        });
+      });
+      document.addEventListener("click", function () {
+        document.querySelectorAll("[data-lang-select].open").forEach(function (w) {
+          w.classList.remove("open");
+          w.querySelector(".lang-btn").setAttribute("aria-expanded", "false");
+        });
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          document.querySelectorAll("[data-lang-select].open").forEach(function (w) {
+            w.classList.remove("open");
+            w.querySelector(".lang-btn").setAttribute("aria-expanded", "false");
+          });
+          closeMenu();
+        }
+      });
+
+      /* ============ Header scroll state ============ */
+      const header = document.getElementById("siteHeader");
+      function onScrollHeader() {
+        header.classList.toggle("scrolled", window.scrollY > 12);
+      }
+      window.addEventListener("scroll", onScrollHeader, { passive: true });
+      onScrollHeader();
+
+      /* ============ Announcement bar ============ */
+      document.getElementById("announceClose").addEventListener("click", function () {
+        document.getElementById("announceBar").style.display = "none";
+      });
+
+      /* ============ Mobile menu ============ */
+      const burger = document.getElementById("burger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      function closeMenu() {
+        burger.classList.remove("open");
+        mobileMenu.classList.remove("open");
+        document.body.classList.remove("menu-open");
+        burger.setAttribute("aria-expanded", "false");
+        mobileMenu.setAttribute("aria-hidden", "true");
+      }
+      burger.addEventListener("click", function () {
+        const open = mobileMenu.classList.toggle("open");
+        burger.classList.toggle("open", open);
+        document.body.classList.toggle("menu-open", open);
+        burger.setAttribute("aria-expanded", open ? "true" : "false");
+        mobileMenu.setAttribute("aria-hidden", open ? "false" : "true");
+      });
+      mobileMenu.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", closeMenu);
+      });
+
+      /* ============ Reveal on scroll ============ */
+      const revealObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+      document.querySelectorAll(".rv, .rv-img, .rv-card").forEach(function (el) { revealObserver.observe(el); });
+      /* Failsafe: on any scroll, reveal anything already at/above the viewport
+         edge even if an observer callback was throttled by the webview. */
+      let revealTicking = false;
+      window.addEventListener("scroll", function () {
+        if (revealTicking) return;
+        revealTicking = true;
+        requestAnimationFrame(function () {
+          revealTicking = false;
+          document.querySelectorAll(".rv:not(.in), .rv-img:not(.in), .rv-card:not(.in)").forEach(function (el) {
+            const r = el.getBoundingClientRect();
+            if (r.top < window.innerHeight * 0.94) {
+              el.classList.add("in");
+              revealObserver.unobserve(el);
+            }
+          });
+        });
+      }, { passive: true });
+
+      const stepsEl = document.getElementById("stepsTimeline");
+      if (stepsEl) {
+        const stepsObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              stepsEl.classList.add("in");
+              stepsObserver.disconnect();
+            }
+          });
+        }, { threshold: 0.3 });
+        stepsObserver.observe(stepsEl);
+      }
+
+      /* ============ Subtle hero parallax ============ */
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const finePointer = window.matchMedia("(pointer: fine)").matches;
+      if (!reduceMotion) {
+        const layers = document.querySelectorAll("[data-parallax]");
+        let ticking = false;
+        function parallax() {
+          const vh = window.innerHeight;
+          layers.forEach(function (el) {
+            const r = el.getBoundingClientRect();
+            if (r.bottom < 0 || r.top > vh) return;
+            const speed = parseFloat(el.getAttribute("data-parallax")) || 10;
+            const offset = (vh / 2 - (r.top + r.height / 2)) * (speed / 900);
+            el.style.transform = "translateY(" + offset.toFixed(1) + "px)";
+          });
+          ticking = false;
+        }
+        window.addEventListener("scroll", function () {
+          if (!ticking) { ticking = true; requestAnimationFrame(parallax); }
+        }, { passive: true });
+        parallax();
+      }
+
+      /* ============ Magnetic CTAs ============ */
+      if (finePointer && !reduceMotion) {
+        document.querySelectorAll(".magnetic").forEach(function (el) {
+          el.addEventListener("mousemove", function (e) {
+            const r = el.getBoundingClientRect();
+            const x = (e.clientX - r.left - r.width / 2) * 0.16;
+            const y = (e.clientY - r.top - r.height / 2) * 0.28;
+            el.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px)";
+          });
+          el.addEventListener("mouseleave", function () { el.style.transform = ""; });
+        });
+      }
+
+      /* ============ FAQ accordion ============ */
+      document.querySelectorAll(".faq-item").forEach(function (item) {
+        const q = item.querySelector(".faq-q");
+        q.addEventListener("click", function () {
+          const isOpen = item.classList.contains("open");
+          document.querySelectorAll(".faq-item.open").forEach(function (other) {
+            other.classList.remove("open");
+            other.querySelector(".faq-q").setAttribute("aria-expanded", "false");
+          });
+          if (!isOpen) {
+            item.classList.add("open");
+            q.setAttribute("aria-expanded", "true");
+          }
+        });
+      });
+
+      /* ============ Service card → preselect form service ============ */
+      document.querySelectorAll("[data-service]").forEach(function (card) {
+        card.addEventListener("click", function () {
+          const sel = document.getElementById("fService");
+          if (sel) sel.value = card.getAttribute("data-service");
+        });
+      });
+
+      /* ============ Enquiry form (frontend demo) ============ */
+      const form = document.getElementById("enquiryForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const successPanel = document.getElementById("formSuccess");
+      const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+      const phoneRe = /^[+]?[\d\s().-]{7,20}$/;
+
+      function setInvalid(input, invalid) {
+        const field = input.closest(".field");
+        if (field) field.classList.toggle("invalid", invalid);
+        input.setAttribute("aria-invalid", invalid ? "true" : "false");
+        return !invalid;
+      }
+      function validateField(input) {
+        const v = input.value.trim();
+        switch (input.id) {
+          case "fName": return setInvalid(input, v.length < 2);
+          case "fEmail": return setInvalid(input, !emailRe.test(v));
+          case "fPhone": return setInvalid(input, v !== "" && !phoneRe.test(v));
+          case "fService": return setInvalid(input, v === "");
+          case "fLocation": return setInvalid(input, v.length < 2);
+          default: return true;
+        }
+      }
+      ["fName", "fEmail", "fPhone", "fService", "fLocation"].forEach(function (id) {
+        const input = document.getElementById(id);
+        input.addEventListener("input", function () { setInvalid(input, false); });
+        input.addEventListener("change", function () { setInvalid(input, false); });
+        input.addEventListener("blur", function () {
+          if (input.closest(".field").classList.contains("invalid")) validateField(input);
+        });
+      });
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let ok = true, firstBad = null;
+        ["fName", "fEmail", "fPhone", "fService", "fLocation"].forEach(function (id) {
+          const input = document.getElementById(id);
+          if (!validateField(input)) { ok = false; if (!firstBad) firstBad = input; }
+        });
+        if (!ok) { firstBad.focus(); return; }
+        submitBtn.classList.add("loading");
+        submitBtn.disabled = true;
+        setTimeout(function () {
+          submitBtn.classList.remove("loading");
+          submitBtn.disabled = false;
+          form.classList.add("hidden");
+          successPanel.classList.add("show");
+          successPanel.setAttribute("tabindex", "-1");
+          successPanel.focus({ preventScroll: false });
+        }, 1300);
+      });
+      document.getElementById("resetFormBtn").addEventListener("click", function () {
+        form.reset();
+        form.classList.remove("hidden");
+        successPanel.classList.remove("show");
+        document.getElementById("fName").focus();
+      });
+
+      /* ============ Custom cursor (desktop only) ============ */
+      if (finePointer && !reduceMotion) {
+        document.body.classList.add("cursor-on");
+        const dot = document.querySelector(".cursor-dot");
+        const ring = document.querySelector(".cursor-ring");
+        const label = ring.querySelector(".cursor-label");
+        let mx = -100, my = -100, rx = -100, ry = -100;
+        document.addEventListener("mousemove", function (e) {
+          mx = e.clientX; my = e.clientY;
+          dot.style.left = mx + "px"; dot.style.top = my + "px";
+        });
+        (function animateRing() {
+          rx += (mx - rx) * 0.16;
+          ry += (my - ry) * 0.16;
+          ring.style.left = rx + "px"; ring.style.top = ry + "px";
+          requestAnimationFrame(animateRing);
+        })();
+        document.querySelectorAll("a, button, select, input, textarea, .faq-q").forEach(function (el) {
+          el.addEventListener("mouseenter", function () { ring.classList.add("grow"); });
+          el.addEventListener("mouseleave", function () { ring.classList.remove("grow"); });
+        });
+        document.querySelectorAll("[data-cursor='view']").forEach(function (el) {
+          el.addEventListener("mouseenter", function () {
+            label.textContent = I18N[currentLang]["cursor.view"] || "View";
+            ring.classList.add("labelled");
+          });
+          el.addEventListener("mouseleave", function () { ring.classList.remove("labelled"); });
+        });
+      }
+
+      /* ============ Footer year ============ */
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  
+<script>
+(function(){
+  var files = ['img-0.jpg', 'img-1.jpg', 'img-2.jpg', 'img-3.jpg', 'img-4.jpg', 'img-5.jpg', 'img-6.jpg', 'img-7.jpg', 'img-8.jpg'];
+  var map = {};
+  function fixImg(el){
+    var s = el.getAttribute('src') || '';
+    if (s.indexOf('images/') === 0 && map[s]) el.src = map[s];
+  }
+  function fixBg(el){
+    var bg = getComputedStyle(el).backgroundImage || '';
+    Object.keys(map).forEach(function(k){
+      if (bg.indexOf(k) !== -1) el.style.backgroundImage = 'url(' + map[k] + ')';
+    });
+  }
+  function fixAll(){
+    document.querySelectorAll('img[src^="images/"]').forEach(fixImg);
+    document.querySelectorAll('*').forEach(function(el){
+      var st = el.getAttribute('style') || '';
+      if (st.indexOf('images/') !== -1) fixBg(el);
+    });
+  }
+  var obs = new MutationObserver(function(muts){
+    muts.forEach(function(m){
+      m.addedNodes.forEach(function(nd){
+        if (nd.nodeType !== 1) return;
+        if (nd.tagName === 'IMG') fixImg(nd);
+        nd.querySelectorAll && nd.querySelectorAll('img[src^="images/"]').forEach(fixImg);
+      });
+      if (m.type === 'attributes' && m.target.tagName === 'IMG') fixImg(m.target);
+    });
+  });
+  obs.observe(document.documentElement, {childList:true, subtree:true, attributes:true, attributeFilter:['src']});
+  Promise.all(files.map(function(f){
+    return fetch('images-b64/' + f + '.b64').then(function(r){ return r.text(); }).then(function(t){
+      map['images/' + f] = 'data:image/jpeg;base64,' + t.trim();
+    }).catch(function(){});
+  })).then(fixAll);
+})();
+</script>
+</body>
+</html>
